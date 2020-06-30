@@ -1,0 +1,7189 @@
+@charset "UTF-8";
+/*! Ionicons, v2.0.1 Created by Ben Sperry for the Ionic Framework, http://ionicons.com/ https://twitter.com/benjsperry  https://twitter.com/ionicframework MIT License: https://github.com/driftyco/ionicons Android-style icons originally built by Google’s Material Design Icons: https://github.com/google/material-design-icons used under CC BY http://creativecommons.org/licenses/by/4.0/ Modified icons to fit ionicon’s grid from original. */
+
+@font-face {
+    font-family: "Ionicons";
+    src: url("fonts/ionicons.eot?v=2.0.1");
+    src: url("fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("fonts/ionicons.woff?v=2.0.1") format("woff"), url("fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ion, .ionicons, .ion-alert:before, .ion-alert-circled:before, .ion-android-add:before, .ion-android-add-circle:before, .ion-android-alarm-clock:before, .ion-android-alert:before, .ion-android-apps:before, .ion-android-archive:before, .ion-android-arrow-back:before, .ion-android-arrow-down:before, .ion-android-arrow-dropdown:before, .ion-android-arrow-dropdown-circle:before, .ion-android-arrow-dropleft:before, .ion-android-arrow-dropleft-circle:before, .ion-android-arrow-dropright:before, .ion-android-arrow-dropright-circle:before, .ion-android-arrow-dropup:before, .ion-android-arrow-dropup-circle:before, .ion-android-arrow-forward:before, .ion-android-arrow-up:before, .ion-android-attach:before, .ion-android-bar:before, .ion-android-bicycle:before, .ion-android-boat:before, .ion-android-bookmark:before, .ion-android-bulb:before, .ion-android-bus:before, .ion-android-calendar:before, .ion-android-call:before, .ion-android-camera:before, .ion-android-cancel:before, .ion-android-car:before, .ion-android-cart:before, .ion-android-chat:before, .ion-android-checkbox:before, .ion-android-checkbox-blank:before, .ion-android-checkbox-outline:before, .ion-android-checkbox-outline-blank:before, .ion-android-checkmark-circle:before, .ion-android-clipboard:before, .ion-android-close:before, .ion-android-cloud:before, .ion-android-cloud-circle:before, .ion-android-cloud-done:before, .ion-android-cloud-outline:before, .ion-android-color-palette:before, .ion-android-compass:before, .ion-android-contact:before, .ion-android-contacts:before, .ion-android-contract:before, .ion-android-create:before, .ion-android-delete:before, .ion-android-desktop:before, .ion-android-document:before, .ion-android-done:before, .ion-android-done-all:before, .ion-android-download:before, .ion-android-drafts:before, .ion-android-exit:before, .ion-android-expand:before, .ion-android-favorite:before, .ion-android-favorite-outline:before, .ion-android-film:before, .ion-android-folder:before, .ion-android-folder-open:before, .ion-android-funnel:before, .ion-android-globe:before, .ion-android-hand:before, .ion-android-hangout:before, .ion-android-happy:before, .ion-android-home:before, .ion-android-image:before, .ion-android-laptop:before, .ion-android-list:before, .ion-android-locate:before, .ion-android-lock:before, .ion-android-mail:before, .ion-android-map:before, .ion-android-menu:before, .ion-android-microphone:before, .ion-android-microphone-off:before, .ion-android-more-horizontal:before, .ion-android-more-vertical:before, .ion-android-navigate:before, .ion-android-notifications:before, .ion-android-notifications-none:before, .ion-android-notifications-off:before, .ion-android-open:before, .ion-android-options:before, .ion-android-people:before, .ion-android-person:before, .ion-android-person-add:before, .ion-android-phone-landscape:before, .ion-android-phone-portrait:before, .ion-android-pin:before, .ion-android-plane:before, .ion-android-playstore:before, .ion-android-print:before, .ion-android-radio-button-off:before, .ion-android-radio-button-on:before, .ion-android-refresh:before, .ion-android-remove:before, .ion-android-remove-circle:before, .ion-android-restaurant:before, .ion-android-sad:before, .ion-android-search:before, .ion-android-send:before, .ion-android-settings:before, .ion-android-share:before, .ion-android-share-alt:before, .ion-android-star:before, .ion-android-star-half:before, .ion-android-star-outline:before, .ion-android-stopwatch:before, .ion-android-subway:before, .ion-android-sunny:before, .ion-android-sync:before, .ion-android-textsms:before, .ion-android-time:before, .ion-android-train:before, .ion-android-unlock:before, .ion-android-upload:before, .ion-android-volume-down:before, .ion-android-volume-mute:before, .ion-android-volume-off:before, .ion-android-volume-up:before, .ion-android-walk:before, .ion-android-warning:before, .ion-android-watch:before, .ion-android-wifi:before, .ion-aperture:before, .ion-archive:before, .ion-arrow-down-a:before, .ion-arrow-down-b:before, .ion-arrow-down-c:before, .ion-arrow-expand:before, .ion-arrow-graph-down-left:before, .ion-arrow-graph-down-right:before, .ion-arrow-graph-up-left:before, .ion-arrow-graph-up-right:before, .ion-arrow-left-a:before, .ion-arrow-left-b:before, .ion-arrow-left-c:before, .ion-arrow-move:before, .ion-arrow-resize:before, .ion-arrow-return-left:before, .ion-arrow-return-right:before, .ion-arrow-right-a:before, .ion-arrow-right-b:before, .ion-arrow-right-c:before, .ion-arrow-shrink:before, .ion-arrow-swap:before, .ion-arrow-up-a:before, .ion-arrow-up-b:before, .ion-arrow-up-c:before, .ion-asterisk:before, .ion-at:before, .ion-backspace:before, .ion-backspace-outline:before, .ion-bag:before, .ion-battery-charging:before, .ion-battery-empty:before, .ion-battery-full:before, .ion-battery-half:before, .ion-battery-low:before, .ion-beaker:before, .ion-beer:before, .ion-bluetooth:before, .ion-bonfire:before, .ion-bookmark:before, .ion-bowtie:before, .ion-briefcase:before, .ion-bug:before, .ion-calculator:before, .ion-calendar:before, .ion-camera:before, .ion-card:before, .ion-cash:before, .ion-chatbox:before, .ion-chatbox-working:before, .ion-chatboxes:before, .ion-chatbubble:before, .ion-chatbubble-working:before, .ion-chatbubbles:before, .ion-checkmark:before, .ion-checkmark-circled:before, .ion-checkmark-round:before, .ion-chevron-down:before, .ion-chevron-left:before, .ion-chevron-right:before, .ion-chevron-up:before, .ion-clipboard:before, .ion-clock:before, .ion-close:before, .ion-close-circled:before, .ion-close-round:before, .ion-closed-captioning:before, .ion-cloud:before, .ion-code:before, .ion-code-download:before, .ion-code-working:before, .ion-coffee:before, .ion-compass:before, .ion-compose:before, .ion-connection-bars:before, .ion-contrast:before, .ion-crop:before, .ion-cube:before, .ion-disc:before, .ion-document:before, .ion-document-text:before, .ion-drag:before, .ion-earth:before, .ion-easel:before, .ion-edit:before, .ion-egg:before, .ion-eject:before, .ion-email:before, .ion-email-unread:before, .ion-erlenmeyer-flask:before, .ion-erlenmeyer-flask-bubbles:before, .ion-eye:before, .ion-eye-disabled:before, .ion-female:before, .ion-filing:before, .ion-film-marker:before, .ion-fireball:before, .ion-flag:before, .ion-flame:before, .ion-flash:before, .ion-flash-off:before, .ion-folder:before, .ion-fork:before, .ion-fork-repo:before, .ion-forward:before, .ion-funnel:before, .ion-gear-a:before, .ion-gear-b:before, .ion-grid:before, .ion-hammer:before, .ion-happy:before, .ion-happy-outline:before, .ion-headphone:before, .ion-heart:before, .ion-heart-broken:before, .ion-help:before, .ion-help-buoy:before, .ion-help-circled:before, .ion-home:before, .ion-icecream:before, .ion-image:before, .ion-images:before, .ion-information:before, .ion-information-circled:before, .ion-ionic:before, .ion-ios-alarm:before, .ion-ios-alarm-outline:before, .ion-ios-albums:before, .ion-ios-albums-outline:before, .ion-ios-americanfootball:before, .ion-ios-americanfootball-outline:before, .ion-ios-analytics:before, .ion-ios-analytics-outline:before, .ion-ios-arrow-back:before, .ion-ios-arrow-down:before, .ion-ios-arrow-forward:before, .ion-ios-arrow-left:before, .ion-ios-arrow-right:before, .ion-ios-arrow-thin-down:before, .ion-ios-arrow-thin-left:before, .ion-ios-arrow-thin-right:before, .ion-ios-arrow-thin-up:before, .ion-ios-arrow-up:before, .ion-ios-at:before, .ion-ios-at-outline:before, .ion-ios-barcode:before, .ion-ios-barcode-outline:before, .ion-ios-baseball:before, .ion-ios-baseball-outline:before, .ion-ios-basketball:before, .ion-ios-basketball-outline:before, .ion-ios-bell:before, .ion-ios-bell-outline:before, .ion-ios-body:before, .ion-ios-body-outline:before, .ion-ios-bolt:before, .ion-ios-bolt-outline:before, .ion-ios-book:before, .ion-ios-book-outline:before, .ion-ios-bookmarks:before, .ion-ios-bookmarks-outline:before, .ion-ios-box:before, .ion-ios-box-outline:before, .ion-ios-briefcase:before, .ion-ios-briefcase-outline:before, .ion-ios-browsers:before, .ion-ios-browsers-outline:before, .ion-ios-calculator:before, .ion-ios-calculator-outline:before, .ion-ios-calendar:before, .ion-ios-calendar-outline:before, .ion-ios-camera:before, .ion-ios-camera-outline:before, .ion-ios-cart:before, .ion-ios-cart-outline:before, .ion-ios-chatboxes:before, .ion-ios-chatboxes-outline:before, .ion-ios-chatbubble:before, .ion-ios-chatbubble-outline:before, .ion-ios-checkmark:before, .ion-ios-checkmark-empty:before, .ion-ios-checkmark-outline:before, .ion-ios-circle-filled:before, .ion-ios-circle-outline:before, .ion-ios-clock:before, .ion-ios-clock-outline:before, .ion-ios-close:before, .ion-ios-close-empty:before, .ion-ios-close-outline:before, .ion-ios-cloud:before, .ion-ios-cloud-download:before, .ion-ios-cloud-download-outline:before, .ion-ios-cloud-outline:before, .ion-ios-cloud-upload:before, .ion-ios-cloud-upload-outline:before, .ion-ios-cloudy:before, .ion-ios-cloudy-night:before, .ion-ios-cloudy-night-outline:before, .ion-ios-cloudy-outline:before, .ion-ios-cog:before, .ion-ios-cog-outline:before, .ion-ios-color-filter:before, .ion-ios-color-filter-outline:before, .ion-ios-color-wand:before, .ion-ios-color-wand-outline:before, .ion-ios-compose:before, .ion-ios-compose-outline:before, .ion-ios-contact:before, .ion-ios-contact-outline:before, .ion-ios-copy:before, .ion-ios-copy-outline:before, .ion-ios-crop:before, .ion-ios-crop-strong:before, .ion-ios-download:before, .ion-ios-download-outline:before, .ion-ios-drag:before, .ion-ios-email:before, .ion-ios-email-outline:before, .ion-ios-eye:before, .ion-ios-eye-outline:before, .ion-ios-fastforward:before, .ion-ios-fastforward-outline:before, .ion-ios-filing:before, .ion-ios-filing-outline:before, .ion-ios-film:before, .ion-ios-film-outline:before, .ion-ios-flag:before, .ion-ios-flag-outline:before, .ion-ios-flame:before, .ion-ios-flame-outline:before, .ion-ios-flask:before, .ion-ios-flask-outline:before, .ion-ios-flower:before, .ion-ios-flower-outline:before, .ion-ios-folder:before, .ion-ios-folder-outline:before, .ion-ios-football:before, .ion-ios-football-outline:before, .ion-ios-game-controller-a:before, .ion-ios-game-controller-a-outline:before, .ion-ios-game-controller-b:before, .ion-ios-game-controller-b-outline:before, .ion-ios-gear:before, .ion-ios-gear-outline:before, .ion-ios-glasses:before, .ion-ios-glasses-outline:before, .ion-ios-grid-view:before, .ion-ios-grid-view-outline:before, .ion-ios-heart:before, .ion-ios-heart-outline:before, .ion-ios-help:before, .ion-ios-help-empty:before, .ion-ios-help-outline:before, .ion-ios-home:before, .ion-ios-home-outline:before, .ion-ios-infinite:before, .ion-ios-infinite-outline:before, .ion-ios-information:before, .ion-ios-information-empty:before, .ion-ios-information-outline:before, .ion-ios-ionic-outline:before, .ion-ios-keypad:before, .ion-ios-keypad-outline:before, .ion-ios-lightbulb:before, .ion-ios-lightbulb-outline:before, .ion-ios-list:before, .ion-ios-list-outline:before, .ion-ios-location:before, .ion-ios-location-outline:before, .ion-ios-locked:before, .ion-ios-locked-outline:before, .ion-ios-loop:before, .ion-ios-loop-strong:before, .ion-ios-medical:before, .ion-ios-medical-outline:before, .ion-ios-medkit:before, .ion-ios-medkit-outline:before, .ion-ios-mic:before, .ion-ios-mic-off:before, .ion-ios-mic-outline:before, .ion-ios-minus:before, .ion-ios-minus-empty:before, .ion-ios-minus-outline:before, .ion-ios-monitor:before, .ion-ios-monitor-outline:before, .ion-ios-moon:before, .ion-ios-moon-outline:before, .ion-ios-more:before, .ion-ios-more-outline:before, .ion-ios-musical-note:before, .ion-ios-musical-notes:before, .ion-ios-navigate:before, .ion-ios-navigate-outline:before, .ion-ios-nutrition:before, .ion-ios-nutrition-outline:before, .ion-ios-paper:before, .ion-ios-paper-outline:before, .ion-ios-paperplane:before, .ion-ios-paperplane-outline:before, .ion-ios-partlysunny:before, .ion-ios-partlysunny-outline:before, .ion-ios-pause:before, .ion-ios-pause-outline:before, .ion-ios-paw:before, .ion-ios-paw-outline:before, .ion-ios-people:before, .ion-ios-people-outline:before, .ion-ios-person:before, .ion-ios-person-outline:before, .ion-ios-personadd:before, .ion-ios-personadd-outline:before, .ion-ios-photos:before, .ion-ios-photos-outline:before, .ion-ios-pie:before, .ion-ios-pie-outline:before, .ion-ios-pint:before, .ion-ios-pint-outline:before, .ion-ios-play:before, .ion-ios-play-outline:before, .ion-ios-plus:before, .ion-ios-plus-empty:before, .ion-ios-plus-outline:before, .ion-ios-pricetag:before, .ion-ios-pricetag-outline:before, .ion-ios-pricetags:before, .ion-ios-pricetags-outline:before, .ion-ios-printer:before, .ion-ios-printer-outline:before, .ion-ios-pulse:before, .ion-ios-pulse-strong:before, .ion-ios-rainy:before, .ion-ios-rainy-outline:before, .ion-ios-recording:before, .ion-ios-recording-outline:before, .ion-ios-redo:before, .ion-ios-redo-outline:before, .ion-ios-refresh:before, .ion-ios-refresh-empty:before, .ion-ios-refresh-outline:before, .ion-ios-reload:before, .ion-ios-reverse-camera:before, .ion-ios-reverse-camera-outline:before, .ion-ios-rewind:before, .ion-ios-rewind-outline:before, .ion-ios-rose:before, .ion-ios-rose-outline:before, .ion-ios-search:before, .ion-ios-search-strong:before, .ion-ios-settings:before, .ion-ios-settings-strong:before, .ion-ios-shuffle:before, .ion-ios-shuffle-strong:before, .ion-ios-skipbackward:before, .ion-ios-skipbackward-outline:before, .ion-ios-skipforward:before, .ion-ios-skipforward-outline:before, .ion-ios-snowy:before, .ion-ios-speedometer:before, .ion-ios-speedometer-outline:before, .ion-ios-star:before, .ion-ios-star-half:before, .ion-ios-star-outline:before, .ion-ios-stopwatch:before, .ion-ios-stopwatch-outline:before, .ion-ios-sunny:before, .ion-ios-sunny-outline:before, .ion-ios-telephone:before, .ion-ios-telephone-outline:before, .ion-ios-tennisball:before, .ion-ios-tennisball-outline:before, .ion-ios-thunderstorm:before, .ion-ios-thunderstorm-outline:before, .ion-ios-time:before, .ion-ios-time-outline:before, .ion-ios-timer:before, .ion-ios-timer-outline:before, .ion-ios-toggle:before, .ion-ios-toggle-outline:before, .ion-ios-trash:before, .ion-ios-trash-outline:before, .ion-ios-undo:before, .ion-ios-undo-outline:before, .ion-ios-unlocked:before, .ion-ios-unlocked-outline:before, .ion-ios-upload:before, .ion-ios-upload-outline:before, .ion-ios-videocam:before, .ion-ios-videocam-outline:before, .ion-ios-volume-high:before, .ion-ios-volume-low:before, .ion-ios-wineglass:before, .ion-ios-wineglass-outline:before, .ion-ios-world:before, .ion-ios-world-outline:before, .ion-ipad:before, .ion-iphone:before, .ion-ipod:before, .ion-jet:before, .ion-key:before, .ion-knife:before, .ion-laptop:before, .ion-leaf:before, .ion-levels:before, .ion-lightbulb:before, .ion-link:before, .ion-load-a:before, .ion-load-b:before, .ion-load-c:before, .ion-load-d:before, .ion-location:before, .ion-lock-combination:before, .ion-locked:before, .ion-log-in:before, .ion-log-out:before, .ion-loop:before, .ion-magnet:before, .ion-male:before, .ion-man:before, .ion-map:before, .ion-medkit:before, .ion-merge:before, .ion-mic-a:before, .ion-mic-b:before, .ion-mic-c:before, .ion-minus:before, .ion-minus-circled:before, .ion-minus-round:before, .ion-model-s:before, .ion-monitor:before, .ion-more:before, .ion-mouse:before, .ion-music-note:before, .ion-navicon:before, .ion-navicon-round:before, .ion-navigate:before, .ion-network:before, .ion-no-smoking:before, .ion-nuclear:before, .ion-outlet:before, .ion-paintbrush:before, .ion-paintbucket:before, .ion-paper-airplane:before, .ion-paperclip:before, .ion-pause:before, .ion-person:before, .ion-person-add:before, .ion-person-stalker:before, .ion-pie-graph:before, .ion-pin:before, .ion-pinpoint:before, .ion-pizza:before, .ion-plane:before, .ion-planet:before, .ion-play:before, .ion-playstation:before, .ion-plus:before, .ion-plus-circled:before, .ion-plus-round:before, .ion-podium:before, .ion-pound:before, .ion-power:before, .ion-pricetag:before, .ion-pricetags:before, .ion-printer:before, .ion-pull-request:before, .ion-qr-scanner:before, .ion-quote:before, .ion-radio-waves:before, .ion-record:before, .ion-refresh:before, .ion-reply:before, .ion-reply-all:before, .ion-ribbon-a:before, .ion-ribbon-b:before, .ion-sad:before, .ion-sad-outline:before, .ion-scissors:before, .ion-search:before, .ion-settings:before, .ion-share:before, .ion-shuffle:before, .ion-skip-backward:before, .ion-skip-forward:before, .ion-social-android:before, .ion-social-android-outline:before, .ion-social-angular:before, .ion-social-angular-outline:before, .ion-social-apple:before, .ion-social-apple-outline:before, .ion-social-bitcoin:before, .ion-social-bitcoin-outline:before, .ion-social-buffer:before, .ion-social-buffer-outline:before, .ion-social-chrome:before, .ion-social-chrome-outline:before, .ion-social-codepen:before, .ion-social-codepen-outline:before, .ion-social-css3:before, .ion-social-css3-outline:before, .ion-social-designernews:before, .ion-social-designernews-outline:before, .ion-social-dribbble:before, .ion-social-dribbble-outline:before, .ion-social-dropbox:before, .ion-social-dropbox-outline:before, .ion-social-euro:before, .ion-social-euro-outline:before, .ion-social-facebook:before, .ion-social-facebook-outline:before, .ion-social-foursquare:before, .ion-social-foursquare-outline:before, .ion-social-freebsd-devil:before, .ion-social-github:before, .ion-social-github-outline:before, .ion-social-google:before, .ion-social-google-outline:before, .ion-social-googleplus:before, .ion-social-googleplus-outline:before, .ion-social-hackernews:before, .ion-social-hackernews-outline:before, .ion-social-html5:before, .ion-social-html5-outline:before, .ion-social-instagram:before, .ion-social-instagram-outline:before, .ion-social-javascript:before, .ion-social-javascript-outline:before, .ion-social-linkedin:before, .ion-social-linkedin-outline:before, .ion-social-markdown:before, .ion-social-nodejs:before, .ion-social-octocat:before, .ion-social-pinterest:before, .ion-social-pinterest-outline:before, .ion-social-python:before, .ion-social-reddit:before, .ion-social-reddit-outline:before, .ion-social-rss:before, .ion-social-rss-outline:before, .ion-social-sass:before, .ion-social-skype:before, .ion-social-skype-outline:before, .ion-social-snapchat:before, .ion-social-snapchat-outline:before, .ion-social-tumblr:before, .ion-social-tumblr-outline:before, .ion-social-tux:before, .ion-social-twitch:before, .ion-social-twitch-outline:before, .ion-social-twitter:before, .ion-social-twitter-outline:before, .ion-social-usd:before, .ion-social-usd-outline:before, .ion-social-vimeo:before, .ion-social-vimeo-outline:before, .ion-social-whatsapp:before, .ion-social-whatsapp-outline:before, .ion-social-windows:before, .ion-social-windows-outline:before, .ion-social-wordpress:before, .ion-social-wordpress-outline:before, .ion-social-yahoo:before, .ion-social-yahoo-outline:before, .ion-social-yen:before, .ion-social-yen-outline:before, .ion-social-youtube:before, .ion-social-youtube-outline:before, .ion-soup-can:before, .ion-soup-can-outline:before, .ion-speakerphone:before, .ion-speedometer:before, .ion-spoon:before, .ion-star:before, .ion-stats-bars:before, .ion-steam:before, .ion-stop:before, .ion-thermometer:before, .ion-thumbsdown:before, .ion-thumbsup:before, .ion-toggle:before, .ion-toggle-filled:before, .ion-transgender:before, .ion-trash-a:before, .ion-trash-b:before, .ion-trophy:before, .ion-tshirt:before, .ion-tshirt-outline:before, .ion-umbrella:before, .ion-university:before, .ion-unlocked:before, .ion-upload:before, .ion-usb:before, .ion-videocamera:before, .ion-volume-high:before, .ion-volume-low:before, .ion-volume-medium:before, .ion-volume-mute:before, .ion-wand:before, .ion-waterdrop:before, .ion-wifi:before, .ion-wineglass:before, .ion-woman:before, .ion-wrench:before, .ion-xbox:before {
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-alert:before {
+    content: "\f101";
+}
+
+.ion-alert-circled:before {
+    content: "\f100";
+}
+
+.ion-android-add:before {
+    content: "\f2c7";
+}
+
+.ion-android-add-circle:before {
+    content: "\f359";
+}
+
+.ion-android-alarm-clock:before {
+    content: "\f35a";
+}
+
+.ion-android-alert:before {
+    content: "\f35b";
+}
+
+.ion-android-apps:before {
+    content: "\f35c";
+}
+
+.ion-android-archive:before {
+    content: "\f2c9";
+}
+
+.ion-android-arrow-back:before {
+    content: "\f2ca";
+}
+
+.ion-android-arrow-down:before {
+    content: "\f35d";
+}
+
+.ion-android-arrow-dropdown:before {
+    content: "\f35f";
+}
+
+.ion-android-arrow-dropdown-circle:before {
+    content: "\f35e";
+}
+
+.ion-android-arrow-dropleft:before {
+    content: "\f361";
+}
+
+.ion-android-arrow-dropleft-circle:before {
+    content: "\f360";
+}
+
+.ion-android-arrow-dropright:before {
+    content: "\f363";
+}
+
+.ion-android-arrow-dropright-circle:before {
+    content: "\f362";
+}
+
+.ion-android-arrow-dropup:before {
+    content: "\f365";
+}
+
+.ion-android-arrow-dropup-circle:before {
+    content: "\f364";
+}
+
+.ion-android-arrow-forward:before {
+    content: "\f30f";
+}
+
+.ion-android-arrow-up:before {
+    content: "\f366";
+}
+
+.ion-android-attach:before {
+    content: "\f367";
+}
+
+.ion-android-bar:before {
+    content: "\f368";
+}
+
+.ion-android-bicycle:before {
+    content: "\f369";
+}
+
+.ion-android-boat:before {
+    content: "\f36a";
+}
+
+.ion-android-bookmark:before {
+    content: "\f36b";
+}
+
+.ion-android-bulb:before {
+    content: "\f36c";
+}
+
+.ion-android-bus:before {
+    content: "\f36d";
+}
+
+.ion-android-calendar:before {
+    content: "\f2d1";
+}
+
+.ion-android-call:before {
+    content: "\f2d2";
+}
+
+.ion-android-camera:before {
+    content: "\f2d3";
+}
+
+.ion-android-cancel:before {
+    content: "\f36e";
+}
+
+.ion-android-car:before {
+    content: "\f36f";
+}
+
+.ion-android-cart:before {
+    content: "\f370";
+}
+
+.ion-android-chat:before {
+    content: "\f2d4";
+}
+
+.ion-android-checkbox:before {
+    content: "\f374";
+}
+
+.ion-android-checkbox-blank:before {
+    content: "\f371";
+}
+
+.ion-android-checkbox-outline:before {
+    content: "\f373";
+}
+
+.ion-android-checkbox-outline-blank:before {
+    content: "\f372";
+}
+
+.ion-android-checkmark-circle:before {
+    content: "\f375";
+}
+
+.ion-android-clipboard:before {
+    content: "\f376";
+}
+
+.ion-android-close:before {
+    content: "\f2d7";
+}
+
+.ion-android-cloud:before {
+    content: "\f37a";
+}
+
+.ion-android-cloud-circle:before {
+    content: "\f377";
+}
+
+.ion-android-cloud-done:before {
+    content: "\f378";
+}
+
+.ion-android-cloud-outline:before {
+    content: "\f379";
+}
+
+.ion-android-color-palette:before {
+    content: "\f37b";
+}
+
+.ion-android-compass:before {
+    content: "\f37c";
+}
+
+.ion-android-contact:before {
+    content: "\f2d8";
+}
+
+.ion-android-contacts:before {
+    content: "\f2d9";
+}
+
+.ion-android-contract:before {
+    content: "\f37d";
+}
+
+.ion-android-create:before {
+    content: "\f37e";
+}
+
+.ion-android-delete:before {
+    content: "\f37f";
+}
+
+.ion-android-desktop:before {
+    content: "\f380";
+}
+
+.ion-android-document:before {
+    content: "\f381";
+}
+
+.ion-android-done:before {
+    content: "\f383";
+}
+
+.ion-android-done-all:before {
+    content: "\f382";
+}
+
+.ion-android-download:before {
+    content: "\f2dd";
+}
+
+.ion-android-drafts:before {
+    content: "\f384";
+}
+
+.ion-android-exit:before {
+    content: "\f385";
+}
+
+.ion-android-expand:before {
+    content: "\f386";
+}
+
+.ion-android-favorite:before {
+    content: "\f388";
+}
+
+.ion-android-favorite-outline:before {
+    content: "\f387";
+}
+
+.ion-android-film:before {
+    content: "\f389";
+}
+
+.ion-android-folder:before {
+    content: "\f2e0";
+}
+
+.ion-android-folder-open:before {
+    content: "\f38a";
+}
+
+.ion-android-funnel:before {
+    content: "\f38b";
+}
+
+.ion-android-globe:before {
+    content: "\f38c";
+}
+
+.ion-android-hand:before {
+    content: "\f2e3";
+}
+
+.ion-android-hangout:before {
+    content: "\f38d";
+}
+
+.ion-android-happy:before {
+    content: "\f38e";
+}
+
+.ion-android-home:before {
+    content: "\f38f";
+}
+
+.ion-android-image:before {
+    content: "\f2e4";
+}
+
+.ion-android-laptop:before {
+    content: "\f390";
+}
+
+.ion-android-list:before {
+    content: "\f391";
+}
+
+.ion-android-locate:before {
+    content: "\f2e9";
+}
+
+.ion-android-lock:before {
+    content: "\f392";
+}
+
+.ion-android-mail:before {
+    content: "\f2eb";
+}
+
+.ion-android-map:before {
+    content: "\f393";
+}
+
+.ion-android-menu:before {
+    content: "\f394";
+}
+
+.ion-android-microphone:before {
+    content: "\f2ec";
+}
+
+.ion-android-microphone-off:before {
+    content: "\f395";
+}
+
+.ion-android-more-horizontal:before {
+    content: "\f396";
+}
+
+.ion-android-more-vertical:before {
+    content: "\f397";
+}
+
+.ion-android-navigate:before {
+    content: "\f398";
+}
+
+.ion-android-notifications:before {
+    content: "\f39b";
+}
+
+.ion-android-notifications-none:before {
+    content: "\f399";
+}
+
+.ion-android-notifications-off:before {
+    content: "\f39a";
+}
+
+.ion-android-open:before {
+    content: "\f39c";
+}
+
+.ion-android-options:before {
+    content: "\f39d";
+}
+
+.ion-android-people:before {
+    content: "\f39e";
+}
+
+.ion-android-person:before {
+    content: "\f3a0";
+}
+
+.ion-android-person-add:before {
+    content: "\f39f";
+}
+
+.ion-android-phone-landscape:before {
+    content: "\f3a1";
+}
+
+.ion-android-phone-portrait:before {
+    content: "\f3a2";
+}
+
+.ion-android-pin:before {
+    content: "\f3a3";
+}
+
+.ion-android-plane:before {
+    content: "\f3a4";
+}
+
+.ion-android-playstore:before {
+    content: "\f2f0";
+}
+
+.ion-android-print:before {
+    content: "\f3a5";
+}
+
+.ion-android-radio-button-off:before {
+    content: "\f3a6";
+}
+
+.ion-android-radio-button-on:before {
+    content: "\f3a7";
+}
+
+.ion-android-refresh:before {
+    content: "\f3a8";
+}
+
+.ion-android-remove:before {
+    content: "\f2f4";
+}
+
+.ion-android-remove-circle:before {
+    content: "\f3a9";
+}
+
+.ion-android-restaurant:before {
+    content: "\f3aa";
+}
+
+.ion-android-sad:before {
+    content: "\f3ab";
+}
+
+.ion-android-search:before {
+    content: "\f2f5";
+}
+
+.ion-android-send:before {
+    content: "\f2f6";
+}
+
+.ion-android-settings:before {
+    content: "\f2f7";
+}
+
+.ion-android-share:before {
+    content: "\f2f8";
+}
+
+.ion-android-share-alt:before {
+    content: "\f3ac";
+}
+
+.ion-android-star:before {
+    content: "\f2fc";
+}
+
+.ion-android-star-half:before {
+    content: "\f3ad";
+}
+
+.ion-android-star-outline:before {
+    content: "\f3ae";
+}
+
+.ion-android-stopwatch:before {
+    content: "\f2fd";
+}
+
+.ion-android-subway:before {
+    content: "\f3af";
+}
+
+.ion-android-sunny:before {
+    content: "\f3b0";
+}
+
+.ion-android-sync:before {
+    content: "\f3b1";
+}
+
+.ion-android-textsms:before {
+    content: "\f3b2";
+}
+
+.ion-android-time:before {
+    content: "\f3b3";
+}
+
+.ion-android-train:before {
+    content: "\f3b4";
+}
+
+.ion-android-unlock:before {
+    content: "\f3b5";
+}
+
+.ion-android-upload:before {
+    content: "\f3b6";
+}
+
+.ion-android-volume-down:before {
+    content: "\f3b7";
+}
+
+.ion-android-volume-mute:before {
+    content: "\f3b8";
+}
+
+.ion-android-volume-off:before {
+    content: "\f3b9";
+}
+
+.ion-android-volume-up:before {
+    content: "\f3ba";
+}
+
+.ion-android-walk:before {
+    content: "\f3bb";
+}
+
+.ion-android-warning:before {
+    content: "\f3bc";
+}
+
+.ion-android-watch:before {
+    content: "\f3bd";
+}
+
+.ion-android-wifi:before {
+    content: "\f305";
+}
+
+.ion-aperture:before {
+    content: "\f313";
+}
+
+.ion-archive:before {
+    content: "\f102";
+}
+
+.ion-arrow-down-a:before {
+    content: "\f103";
+}
+
+.ion-arrow-down-b:before {
+    content: "\f104";
+}
+
+.ion-arrow-down-c:before {
+    content: "\f105";
+}
+
+.ion-arrow-expand:before {
+    content: "\f25e";
+}
+
+.ion-arrow-graph-down-left:before {
+    content: "\f25f";
+}
+
+.ion-arrow-graph-down-right:before {
+    content: "\f260";
+}
+
+.ion-arrow-graph-up-left:before {
+    content: "\f261";
+}
+
+.ion-arrow-graph-up-right:before {
+    content: "\f262";
+}
+
+.ion-arrow-left-a:before {
+    content: "\f106";
+}
+
+.ion-arrow-left-b:before {
+    content: "\f107";
+}
+
+.ion-arrow-left-c:before {
+    content: "\f108";
+}
+
+.ion-arrow-move:before {
+    content: "\f263";
+}
+
+.ion-arrow-resize:before {
+    content: "\f264";
+}
+
+.ion-arrow-return-left:before {
+    content: "\f265";
+}
+
+.ion-arrow-return-right:before {
+    content: "\f266";
+}
+
+.ion-arrow-right-a:before {
+    content: "\f109";
+}
+
+.ion-arrow-right-b:before {
+    content: "\f10a";
+}
+
+.ion-arrow-right-c:before {
+    content: "\f10b";
+}
+
+.ion-arrow-shrink:before {
+    content: "\f267";
+}
+
+.ion-arrow-swap:before {
+    content: "\f268";
+}
+
+.ion-arrow-up-a:before {
+    content: "\f10c";
+}
+
+.ion-arrow-up-b:before {
+    content: "\f10d";
+}
+
+.ion-arrow-up-c:before {
+    content: "\f10e";
+}
+
+.ion-asterisk:before {
+    content: "\f314";
+}
+
+.ion-at:before {
+    content: "\f10f";
+}
+
+.ion-backspace:before {
+    content: "\f3bf";
+}
+
+.ion-backspace-outline:before {
+    content: "\f3be";
+}
+
+.ion-bag:before {
+    content: "\f110";
+}
+
+.ion-battery-charging:before {
+    content: "\f111";
+}
+
+.ion-battery-empty:before {
+    content: "\f112";
+}
+
+.ion-battery-full:before {
+    content: "\f113";
+}
+
+.ion-battery-half:before {
+    content: "\f114";
+}
+
+.ion-battery-low:before {
+    content: "\f115";
+}
+
+.ion-beaker:before {
+    content: "\f269";
+}
+
+.ion-beer:before {
+    content: "\f26a";
+}
+
+.ion-bluetooth:before {
+    content: "\f116";
+}
+
+.ion-bonfire:before {
+    content: "\f315";
+}
+
+.ion-bookmark:before {
+    content: "\f26b";
+}
+
+.ion-bowtie:before {
+    content: "\f3c0";
+}
+
+.ion-briefcase:before {
+    content: "\f26c";
+}
+
+.ion-bug:before {
+    content: "\f2be";
+}
+
+.ion-calculator:before {
+    content: "\f26d";
+}
+
+.ion-calendar:before {
+    content: "\f117";
+}
+
+.ion-camera:before {
+    content: "\f118";
+}
+
+.ion-card:before {
+    content: "\f119";
+}
+
+.ion-cash:before {
+    content: "\f316";
+}
+
+.ion-chatbox:before {
+    content: "\f11b";
+}
+
+.ion-chatbox-working:before {
+    content: "\f11a";
+}
+
+.ion-chatboxes:before {
+    content: "\f11c";
+}
+
+.ion-chatbubble:before {
+    content: "\f11e";
+}
+
+.ion-chatbubble-working:before {
+    content: "\f11d";
+}
+
+.ion-chatbubbles:before {
+    content: "\f11f";
+}
+
+.ion-checkmark:before {
+    content: "\f122";
+}
+
+.ion-checkmark-circled:before {
+    content: "\f120";
+}
+
+.ion-checkmark-round:before {
+    content: "\f121";
+}
+
+.ion-chevron-down:before {
+    content: "\f123";
+}
+
+.ion-chevron-left:before {
+    content: "\f124";
+}
+
+.ion-chevron-right:before {
+    content: "\f125";
+}
+
+.ion-chevron-up:before {
+    content: "\f126";
+}
+
+.ion-clipboard:before {
+    content: "\f127";
+}
+
+.ion-clock:before {
+    content: "\f26e";
+}
+
+.ion-close:before {
+    content: "\f12a";
+}
+
+.ion-close-circled:before {
+    content: "\f128";
+}
+
+.ion-close-round:before {
+    content: "\f129";
+}
+
+.ion-closed-captioning:before {
+    content: "\f317";
+}
+
+.ion-cloud:before {
+    content: "\f12b";
+}
+
+.ion-code:before {
+    content: "\f271";
+}
+
+.ion-code-download:before {
+    content: "\f26f";
+}
+
+.ion-code-working:before {
+    content: "\f270";
+}
+
+.ion-coffee:before {
+    content: "\f272";
+}
+
+.ion-compass:before {
+    content: "\f273";
+}
+
+.ion-compose:before {
+    content: "\f12c";
+}
+
+.ion-connection-bars:before {
+    content: "\f274";
+}
+
+.ion-contrast:before {
+    content: "\f275";
+}
+
+.ion-crop:before {
+    content: "\f3c1";
+}
+
+.ion-cube:before {
+    content: "\f318";
+}
+
+.ion-disc:before {
+    content: "\f12d";
+}
+
+.ion-document:before {
+    content: "\f12f";
+}
+
+.ion-document-text:before {
+    content: "\f12e";
+}
+
+.ion-drag:before {
+    content: "\f130";
+}
+
+.ion-earth:before {
+    content: "\f276";
+}
+
+.ion-easel:before {
+    content: "\f3c2";
+}
+
+.ion-edit:before {
+    content: "\f2bf";
+}
+
+.ion-egg:before {
+    content: "\f277";
+}
+
+.ion-eject:before {
+    content: "\f131";
+}
+
+.ion-email:before {
+    content: "\f132";
+}
+
+.ion-email-unread:before {
+    content: "\f3c3";
+}
+
+.ion-erlenmeyer-flask:before {
+    content: "\f3c5";
+}
+
+.ion-erlenmeyer-flask-bubbles:before {
+    content: "\f3c4";
+}
+
+.ion-eye:before {
+    content: "\f133";
+}
+
+.ion-eye-disabled:before {
+    content: "\f306";
+}
+
+.ion-female:before {
+    content: "\f278";
+}
+
+.ion-filing:before {
+    content: "\f134";
+}
+
+.ion-film-marker:before {
+    content: "\f135";
+}
+
+.ion-fireball:before {
+    content: "\f319";
+}
+
+.ion-flag:before {
+    content: "\f279";
+}
+
+.ion-flame:before {
+    content: "\f31a";
+}
+
+.ion-flash:before {
+    content: "\f137";
+}
+
+.ion-flash-off:before {
+    content: "\f136";
+}
+
+.ion-folder:before {
+    content: "\f139";
+}
+
+.ion-fork:before {
+    content: "\f27a";
+}
+
+.ion-fork-repo:before {
+    content: "\f2c0";
+}
+
+.ion-forward:before {
+    content: "\f13a";
+}
+
+.ion-funnel:before {
+    content: "\f31b";
+}
+
+.ion-gear-a:before {
+    content: "\f13d";
+}
+
+.ion-gear-b:before {
+    content: "\f13e";
+}
+
+.ion-grid:before {
+    content: "\f13f";
+}
+
+.ion-hammer:before {
+    content: "\f27b";
+}
+
+.ion-happy:before {
+    content: "\f31c";
+}
+
+.ion-happy-outline:before {
+    content: "\f3c6";
+}
+
+.ion-headphone:before {
+    content: "\f140";
+}
+
+.ion-heart:before {
+    content: "\f141";
+}
+
+.ion-heart-broken:before {
+    content: "\f31d";
+}
+
+.ion-help:before {
+    content: "\f143";
+}
+
+.ion-help-buoy:before {
+    content: "\f27c";
+}
+
+.ion-help-circled:before {
+    content: "\f142";
+}
+
+.ion-home:before {
+    content: "\f144";
+}
+
+.ion-icecream:before {
+    content: "\f27d";
+}
+
+.ion-image:before {
+    content: "\f147";
+}
+
+.ion-images:before {
+    content: "\f148";
+}
+
+.ion-information:before {
+    content: "\f14a";
+}
+
+.ion-information-circled:before {
+    content: "\f149";
+}
+
+.ion-ionic:before {
+    content: "\f14b";
+}
+
+.ion-ios-alarm:before {
+    content: "\f3c8";
+}
+
+.ion-ios-alarm-outline:before {
+    content: "\f3c7";
+}
+
+.ion-ios-albums:before {
+    content: "\f3ca";
+}
+
+.ion-ios-albums-outline:before {
+    content: "\f3c9";
+}
+
+.ion-ios-americanfootball:before {
+    content: "\f3cc";
+}
+
+.ion-ios-americanfootball-outline:before {
+    content: "\f3cb";
+}
+
+.ion-ios-analytics:before {
+    content: "\f3ce";
+}
+
+.ion-ios-analytics-outline:before {
+    content: "\f3cd";
+}
+
+.ion-ios-arrow-back:before {
+    content: "\f3cf";
+}
+
+.ion-ios-arrow-down:before {
+    content: "\f3d0";
+}
+
+.ion-ios-arrow-forward:before {
+    content: "\f3d1";
+}
+
+.ion-ios-arrow-left:before {
+    content: "\f3d2";
+}
+
+.ion-ios-arrow-right:before {
+    content: "\f3d3";
+}
+
+.ion-ios-arrow-thin-down:before {
+    content: "\f3d4";
+}
+
+.ion-ios-arrow-thin-left:before {
+    content: "\f3d5";
+}
+
+.ion-ios-arrow-thin-right:before {
+    content: "\f3d6";
+}
+
+.ion-ios-arrow-thin-up:before {
+    content: "\f3d7";
+}
+
+.ion-ios-arrow-up:before {
+    content: "\f3d8";
+}
+
+.ion-ios-at:before {
+    content: "\f3da";
+}
+
+.ion-ios-at-outline:before {
+    content: "\f3d9";
+}
+
+.ion-ios-barcode:before {
+    content: "\f3dc";
+}
+
+.ion-ios-barcode-outline:before {
+    content: "\f3db";
+}
+
+.ion-ios-baseball:before {
+    content: "\f3de";
+}
+
+.ion-ios-baseball-outline:before {
+    content: "\f3dd";
+}
+
+.ion-ios-basketball:before {
+    content: "\f3e0";
+}
+
+.ion-ios-basketball-outline:before {
+    content: "\f3df";
+}
+
+.ion-ios-bell:before {
+    content: "\f3e2";
+}
+
+.ion-ios-bell-outline:before {
+    content: "\f3e1";
+}
+
+.ion-ios-body:before {
+    content: "\f3e4";
+}
+
+.ion-ios-body-outline:before {
+    content: "\f3e3";
+}
+
+.ion-ios-bolt:before {
+    content: "\f3e6";
+}
+
+.ion-ios-bolt-outline:before {
+    content: "\f3e5";
+}
+
+.ion-ios-book:before {
+    content: "\f3e8";
+}
+
+.ion-ios-book-outline:before {
+    content: "\f3e7";
+}
+
+.ion-ios-bookmarks:before {
+    content: "\f3ea";
+}
+
+.ion-ios-bookmarks-outline:before {
+    content: "\f3e9";
+}
+
+.ion-ios-box:before {
+    content: "\f3ec";
+}
+
+.ion-ios-box-outline:before {
+    content: "\f3eb";
+}
+
+.ion-ios-briefcase:before {
+    content: "\f3ee";
+}
+
+.ion-ios-briefcase-outline:before {
+    content: "\f3ed";
+}
+
+.ion-ios-browsers:before {
+    content: "\f3f0";
+}
+
+.ion-ios-browsers-outline:before {
+    content: "\f3ef";
+}
+
+.ion-ios-calculator:before {
+    content: "\f3f2";
+}
+
+.ion-ios-calculator-outline:before {
+    content: "\f3f1";
+}
+
+.ion-ios-calendar:before {
+    content: "\f3f4";
+}
+
+.ion-ios-calendar-outline:before {
+    content: "\f3f3";
+}
+
+.ion-ios-camera:before {
+    content: "\f3f6";
+}
+
+.ion-ios-camera-outline:before {
+    content: "\f3f5";
+}
+
+.ion-ios-cart:before {
+    content: "\f3f8";
+}
+
+.ion-ios-cart-outline:before {
+    content: "\f3f7";
+}
+
+.ion-ios-chatboxes:before {
+    content: "\f3fa";
+}
+
+.ion-ios-chatboxes-outline:before {
+    content: "\f3f9";
+}
+
+.ion-ios-chatbubble:before {
+    content: "\f3fc";
+}
+
+.ion-ios-chatbubble-outline:before {
+    content: "\f3fb";
+}
+
+.ion-ios-checkmark:before {
+    content: "\f3ff";
+}
+
+.ion-ios-checkmark-empty:before {
+    content: "\f3fd";
+}
+
+.ion-ios-checkmark-outline:before {
+    content: "\f3fe";
+}
+
+.ion-ios-circle-filled:before {
+    content: "\f400";
+}
+
+.ion-ios-circle-outline:before {
+    content: "\f401";
+}
+
+.ion-ios-clock:before {
+    content: "\f403";
+}
+
+.ion-ios-clock-outline:before {
+    content: "\f402";
+}
+
+.ion-ios-close:before {
+    content: "\f406";
+}
+
+.ion-ios-close-empty:before {
+    content: "\f404";
+}
+
+.ion-ios-close-outline:before {
+    content: "\f405";
+}
+
+.ion-ios-cloud:before {
+    content: "\f40c";
+}
+
+.ion-ios-cloud-download:before {
+    content: "\f408";
+}
+
+.ion-ios-cloud-download-outline:before {
+    content: "\f407";
+}
+
+.ion-ios-cloud-outline:before {
+    content: "\f409";
+}
+
+.ion-ios-cloud-upload:before {
+    content: "\f40b";
+}
+
+.ion-ios-cloud-upload-outline:before {
+    content: "\f40a";
+}
+
+.ion-ios-cloudy:before {
+    content: "\f410";
+}
+
+.ion-ios-cloudy-night:before {
+    content: "\f40e";
+}
+
+.ion-ios-cloudy-night-outline:before {
+    content: "\f40d";
+}
+
+.ion-ios-cloudy-outline:before {
+    content: "\f40f";
+}
+
+.ion-ios-cog:before {
+    content: "\f412";
+}
+
+.ion-ios-cog-outline:before {
+    content: "\f411";
+}
+
+.ion-ios-color-filter:before {
+    content: "\f414";
+}
+
+.ion-ios-color-filter-outline:before {
+    content: "\f413";
+}
+
+.ion-ios-color-wand:before {
+    content: "\f416";
+}
+
+.ion-ios-color-wand-outline:before {
+    content: "\f415";
+}
+
+.ion-ios-compose:before {
+    content: "\f418";
+}
+
+.ion-ios-compose-outline:before {
+    content: "\f417";
+}
+
+.ion-ios-contact:before {
+    content: "\f41a";
+}
+
+.ion-ios-contact-outline:before {
+    content: "\f419";
+}
+
+.ion-ios-copy:before {
+    content: "\f41c";
+}
+
+.ion-ios-copy-outline:before {
+    content: "\f41b";
+}
+
+.ion-ios-crop:before {
+    content: "\f41e";
+}
+
+.ion-ios-crop-strong:before {
+    content: "\f41d";
+}
+
+.ion-ios-download:before {
+    content: "\f420";
+}
+
+.ion-ios-download-outline:before {
+    content: "\f41f";
+}
+
+.ion-ios-drag:before {
+    content: "\f421";
+}
+
+.ion-ios-email:before {
+    content: "\f423";
+}
+
+.ion-ios-email-outline:before {
+    content: "\f422";
+}
+
+.ion-ios-eye:before {
+    content: "\f425";
+}
+
+.ion-ios-eye-outline:before {
+    content: "\f424";
+}
+
+.ion-ios-fastforward:before {
+    content: "\f427";
+}
+
+.ion-ios-fastforward-outline:before {
+    content: "\f426";
+}
+
+.ion-ios-filing:before {
+    content: "\f429";
+}
+
+.ion-ios-filing-outline:before {
+    content: "\f428";
+}
+
+.ion-ios-film:before {
+    content: "\f42b";
+}
+
+.ion-ios-film-outline:before {
+    content: "\f42a";
+}
+
+.ion-ios-flag:before {
+    content: "\f42d";
+}
+
+.ion-ios-flag-outline:before {
+    content: "\f42c";
+}
+
+.ion-ios-flame:before {
+    content: "\f42f";
+}
+
+.ion-ios-flame-outline:before {
+    content: "\f42e";
+}
+
+.ion-ios-flask:before {
+    content: "\f431";
+}
+
+.ion-ios-flask-outline:before {
+    content: "\f430";
+}
+
+.ion-ios-flower:before {
+    content: "\f433";
+}
+
+.ion-ios-flower-outline:before {
+    content: "\f432";
+}
+
+.ion-ios-folder:before {
+    content: "\f435";
+}
+
+.ion-ios-folder-outline:before {
+    content: "\f434";
+}
+
+.ion-ios-football:before {
+    content: "\f437";
+}
+
+.ion-ios-football-outline:before {
+    content: "\f436";
+}
+
+.ion-ios-game-controller-a:before {
+    content: "\f439";
+}
+
+.ion-ios-game-controller-a-outline:before {
+    content: "\f438";
+}
+
+.ion-ios-game-controller-b:before {
+    content: "\f43b";
+}
+
+.ion-ios-game-controller-b-outline:before {
+    content: "\f43a";
+}
+
+.ion-ios-gear:before {
+    content: "\f43d";
+}
+
+.ion-ios-gear-outline:before {
+    content: "\f43c";
+}
+
+.ion-ios-glasses:before {
+    content: "\f43f";
+}
+
+.ion-ios-glasses-outline:before {
+    content: "\f43e";
+}
+
+.ion-ios-grid-view:before {
+    content: "\f441";
+}
+
+.ion-ios-grid-view-outline:before {
+    content: "\f440";
+}
+
+.ion-ios-heart:before {
+    content: "\f443";
+}
+
+.ion-ios-heart-outline:before {
+    content: "\f442";
+}
+
+.ion-ios-help:before {
+    content: "\f446";
+}
+
+.ion-ios-help-empty:before {
+    content: "\f444";
+}
+
+.ion-ios-help-outline:before {
+    content: "\f445";
+}
+
+.ion-ios-home:before {
+    content: "\f448";
+}
+
+.ion-ios-home-outline:before {
+    content: "\f447";
+}
+
+.ion-ios-infinite:before {
+    content: "\f44a";
+}
+
+.ion-ios-infinite-outline:before {
+    content: "\f449";
+}
+
+.ion-ios-information:before {
+    content: "\f44d";
+}
+
+.ion-ios-information-empty:before {
+    content: "\f44b";
+}
+
+.ion-ios-information-outline:before {
+    content: "\f44c";
+}
+
+.ion-ios-ionic-outline:before {
+    content: "\f44e";
+}
+
+.ion-ios-keypad:before {
+    content: "\f450";
+}
+
+.ion-ios-keypad-outline:before {
+    content: "\f44f";
+}
+
+.ion-ios-lightbulb:before {
+    content: "\f452";
+}
+
+.ion-ios-lightbulb-outline:before {
+    content: "\f451";
+}
+
+.ion-ios-list:before {
+    content: "\f454";
+}
+
+.ion-ios-list-outline:before {
+    content: "\f453";
+}
+
+.ion-ios-location:before {
+    content: "\f456";
+}
+
+.ion-ios-location-outline:before {
+    content: "\f455";
+}
+
+.ion-ios-locked:before {
+    content: "\f458";
+}
+
+.ion-ios-locked-outline:before {
+    content: "\f457";
+}
+
+.ion-ios-loop:before {
+    content: "\f45a";
+}
+
+.ion-ios-loop-strong:before {
+    content: "\f459";
+}
+
+.ion-ios-medical:before {
+    content: "\f45c";
+}
+
+.ion-ios-medical-outline:before {
+    content: "\f45b";
+}
+
+.ion-ios-medkit:before {
+    content: "\f45e";
+}
+
+.ion-ios-medkit-outline:before {
+    content: "\f45d";
+}
+
+.ion-ios-mic:before {
+    content: "\f461";
+}
+
+.ion-ios-mic-off:before {
+    content: "\f45f";
+}
+
+.ion-ios-mic-outline:before {
+    content: "\f460";
+}
+
+.ion-ios-minus:before {
+    content: "\f464";
+}
+
+.ion-ios-minus-empty:before {
+    content: "\f462";
+}
+
+.ion-ios-minus-outline:before {
+    content: "\f463";
+}
+
+.ion-ios-monitor:before {
+    content: "\f466";
+}
+
+.ion-ios-monitor-outline:before {
+    content: "\f465";
+}
+
+.ion-ios-moon:before {
+    content: "\f468";
+}
+
+.ion-ios-moon-outline:before {
+    content: "\f467";
+}
+
+.ion-ios-more:before {
+    content: "\f46a";
+}
+
+.ion-ios-more-outline:before {
+    content: "\f469";
+}
+
+.ion-ios-musical-note:before {
+    content: "\f46b";
+}
+
+.ion-ios-musical-notes:before {
+    content: "\f46c";
+}
+
+.ion-ios-navigate:before {
+    content: "\f46e";
+}
+
+.ion-ios-navigate-outline:before {
+    content: "\f46d";
+}
+
+.ion-ios-nutrition:before {
+    content: "\f470";
+}
+
+.ion-ios-nutrition-outline:before {
+    content: "\f46f";
+}
+
+.ion-ios-paper:before {
+    content: "\f472";
+}
+
+.ion-ios-paper-outline:before {
+    content: "\f471";
+}
+
+.ion-ios-paperplane:before {
+    content: "\f474";
+}
+
+.ion-ios-paperplane-outline:before {
+    content: "\f473";
+}
+
+.ion-ios-partlysunny:before {
+    content: "\f476";
+}
+
+.ion-ios-partlysunny-outline:before {
+    content: "\f475";
+}
+
+.ion-ios-pause:before {
+    content: "\f478";
+}
+
+.ion-ios-pause-outline:before {
+    content: "\f477";
+}
+
+.ion-ios-paw:before {
+    content: "\f47a";
+}
+
+.ion-ios-paw-outline:before {
+    content: "\f479";
+}
+
+.ion-ios-people:before {
+    content: "\f47c";
+}
+
+.ion-ios-people-outline:before {
+    content: "\f47b";
+}
+
+.ion-ios-person:before {
+    content: "\f47e";
+}
+
+.ion-ios-person-outline:before {
+    content: "\f47d";
+}
+
+.ion-ios-personadd:before {
+    content: "\f480";
+}
+
+.ion-ios-personadd-outline:before {
+    content: "\f47f";
+}
+
+.ion-ios-photos:before {
+    content: "\f482";
+}
+
+.ion-ios-photos-outline:before {
+    content: "\f481";
+}
+
+.ion-ios-pie:before {
+    content: "\f484";
+}
+
+.ion-ios-pie-outline:before {
+    content: "\f483";
+}
+
+.ion-ios-pint:before {
+    content: "\f486";
+}
+
+.ion-ios-pint-outline:before {
+    content: "\f485";
+}
+
+.ion-ios-play:before {
+    content: "\f488";
+}
+
+.ion-ios-play-outline:before {
+    content: "\f487";
+}
+
+.ion-ios-plus:before {
+    content: "\f48b";
+}
+
+.ion-ios-plus-empty:before {
+    content: "\f489";
+}
+
+.ion-ios-plus-outline:before {
+    content: "\f48a";
+}
+
+.ion-ios-pricetag:before {
+    content: "\f48d";
+}
+
+.ion-ios-pricetag-outline:before {
+    content: "\f48c";
+}
+
+.ion-ios-pricetags:before {
+    content: "\f48f";
+}
+
+.ion-ios-pricetags-outline:before {
+    content: "\f48e";
+}
+
+.ion-ios-printer:before {
+    content: "\f491";
+}
+
+.ion-ios-printer-outline:before {
+    content: "\f490";
+}
+
+.ion-ios-pulse:before {
+    content: "\f493";
+}
+
+.ion-ios-pulse-strong:before {
+    content: "\f492";
+}
+
+.ion-ios-rainy:before {
+    content: "\f495";
+}
+
+.ion-ios-rainy-outline:before {
+    content: "\f494";
+}
+
+.ion-ios-recording:before {
+    content: "\f497";
+}
+
+.ion-ios-recording-outline:before {
+    content: "\f496";
+}
+
+.ion-ios-redo:before {
+    content: "\f499";
+}
+
+.ion-ios-redo-outline:before {
+    content: "\f498";
+}
+
+.ion-ios-refresh:before {
+    content: "\f49c";
+}
+
+.ion-ios-refresh-empty:before {
+    content: "\f49a";
+}
+
+.ion-ios-refresh-outline:before {
+    content: "\f49b";
+}
+
+.ion-ios-reload:before {
+    content: "\f49d";
+}
+
+.ion-ios-reverse-camera:before {
+    content: "\f49f";
+}
+
+.ion-ios-reverse-camera-outline:before {
+    content: "\f49e";
+}
+
+.ion-ios-rewind:before {
+    content: "\f4a1";
+}
+
+.ion-ios-rewind-outline:before {
+    content: "\f4a0";
+}
+
+.ion-ios-rose:before {
+    content: "\f4a3";
+}
+
+.ion-ios-rose-outline:before {
+    content: "\f4a2";
+}
+
+.ion-ios-search:before {
+    content: "\f4a5";
+}
+
+.ion-ios-search-strong:before {
+    content: "\f4a4";
+}
+
+.ion-ios-settings:before {
+    content: "\f4a7";
+}
+
+.ion-ios-settings-strong:before {
+    content: "\f4a6";
+}
+
+.ion-ios-shuffle:before {
+    content: "\f4a9";
+}
+
+.ion-ios-shuffle-strong:before {
+    content: "\f4a8";
+}
+
+.ion-ios-skipbackward:before {
+    content: "\f4ab";
+}
+
+.ion-ios-skipbackward-outline:before {
+    content: "\f4aa";
+}
+
+.ion-ios-skipforward:before {
+    content: "\f4ad";
+}
+
+.ion-ios-skipforward-outline:before {
+    content: "\f4ac";
+}
+
+.ion-ios-snowy:before {
+    content: "\f4ae";
+}
+
+.ion-ios-speedometer:before {
+    content: "\f4b0";
+}
+
+.ion-ios-speedometer-outline:before {
+    content: "\f4af";
+}
+
+.ion-ios-star:before {
+    content: "\f4b3";
+}
+
+.ion-ios-star-half:before {
+    content: "\f4b1";
+}
+
+.ion-ios-star-outline:before {
+    content: "\f4b2";
+}
+
+.ion-ios-stopwatch:before {
+    content: "\f4b5";
+}
+
+.ion-ios-stopwatch-outline:before {
+    content: "\f4b4";
+}
+
+.ion-ios-sunny:before {
+    content: "\f4b7";
+}
+
+.ion-ios-sunny-outline:before {
+    content: "\f4b6";
+}
+
+.ion-ios-telephone:before {
+    content: "\f4b9";
+}
+
+.ion-ios-telephone-outline:before {
+    content: "\f4b8";
+}
+
+.ion-ios-tennisball:before {
+    content: "\f4bb";
+}
+
+.ion-ios-tennisball-outline:before {
+    content: "\f4ba";
+}
+
+.ion-ios-thunderstorm:before {
+    content: "\f4bd";
+}
+
+.ion-ios-thunderstorm-outline:before {
+    content: "\f4bc";
+}
+
+.ion-ios-time:before {
+    content: "\f4bf";
+}
+
+.ion-ios-time-outline:before {
+    content: "\f4be";
+}
+
+.ion-ios-timer:before {
+    content: "\f4c1";
+}
+
+.ion-ios-timer-outline:before {
+    content: "\f4c0";
+}
+
+.ion-ios-toggle:before {
+    content: "\f4c3";
+}
+
+.ion-ios-toggle-outline:before {
+    content: "\f4c2";
+}
+
+.ion-ios-trash:before {
+    content: "\f4c5";
+}
+
+.ion-ios-trash-outline:before {
+    content: "\f4c4";
+}
+
+.ion-ios-undo:before {
+    content: "\f4c7";
+}
+
+.ion-ios-undo-outline:before {
+    content: "\f4c6";
+}
+
+.ion-ios-unlocked:before {
+    content: "\f4c9";
+}
+
+.ion-ios-unlocked-outline:before {
+    content: "\f4c8";
+}
+
+.ion-ios-upload:before {
+    content: "\f4cb";
+}
+
+.ion-ios-upload-outline:before {
+    content: "\f4ca";
+}
+
+.ion-ios-videocam:before {
+    content: "\f4cd";
+}
+
+.ion-ios-videocam-outline:before {
+    content: "\f4cc";
+}
+
+.ion-ios-volume-high:before {
+    content: "\f4ce";
+}
+
+.ion-ios-volume-low:before {
+    content: "\f4cf";
+}
+
+.ion-ios-wineglass:before {
+    content: "\f4d1";
+}
+
+.ion-ios-wineglass-outline:before {
+    content: "\f4d0";
+}
+
+.ion-ios-world:before {
+    content: "\f4d3";
+}
+
+.ion-ios-world-outline:before {
+    content: "\f4d2";
+}
+
+.ion-ipad:before {
+    content: "\f1f9";
+}
+
+.ion-iphone:before {
+    content: "\f1fa";
+}
+
+.ion-ipod:before {
+    content: "\f1fb";
+}
+
+.ion-jet:before {
+    content: "\f295";
+}
+
+.ion-key:before {
+    content: "\f296";
+}
+
+.ion-knife:before {
+    content: "\f297";
+}
+
+.ion-laptop:before {
+    content: "\f1fc";
+}
+
+.ion-leaf:before {
+    content: "\f1fd";
+}
+
+.ion-levels:before {
+    content: "\f298";
+}
+
+.ion-lightbulb:before {
+    content: "\f299";
+}
+
+.ion-link:before {
+    content: "\f1fe";
+}
+
+.ion-load-a:before {
+    content: "\f29a";
+}
+
+.ion-load-b:before {
+    content: "\f29b";
+}
+
+.ion-load-c:before {
+    content: "\f29c";
+}
+
+.ion-load-d:before {
+    content: "\f29d";
+}
+
+.ion-location:before {
+    content: "\f1ff";
+}
+
+.ion-lock-combination:before {
+    content: "\f4d4";
+}
+
+.ion-locked:before {
+    content: "\f200";
+}
+
+.ion-log-in:before {
+    content: "\f29e";
+}
+
+.ion-log-out:before {
+    content: "\f29f";
+}
+
+.ion-loop:before {
+    content: "\f201";
+}
+
+.ion-magnet:before {
+    content: "\f2a0";
+}
+
+.ion-male:before {
+    content: "\f2a1";
+}
+
+.ion-man:before {
+    content: "\f202";
+}
+
+.ion-map:before {
+    content: "\f203";
+}
+
+.ion-medkit:before {
+    content: "\f2a2";
+}
+
+.ion-merge:before {
+    content: "\f33f";
+}
+
+.ion-mic-a:before {
+    content: "\f204";
+}
+
+.ion-mic-b:before {
+    content: "\f205";
+}
+
+.ion-mic-c:before {
+    content: "\f206";
+}
+
+.ion-minus:before {
+    content: "\f209";
+}
+
+.ion-minus-circled:before {
+    content: "\f207";
+}
+
+.ion-minus-round:before {
+    content: "\f208";
+}
+
+.ion-model-s:before {
+    content: "\f2c1";
+}
+
+.ion-monitor:before {
+    content: "\f20a";
+}
+
+.ion-more:before {
+    content: "\f20b";
+}
+
+.ion-mouse:before {
+    content: "\f340";
+}
+
+.ion-music-note:before {
+    content: "\f20c";
+}
+
+.ion-navicon:before {
+    content: "\f20e";
+}
+
+.ion-navicon-round:before {
+    content: "\f20d";
+}
+
+.ion-navigate:before {
+    content: "\f2a3";
+}
+
+.ion-network:before {
+    content: "\f341";
+}
+
+.ion-no-smoking:before {
+    content: "\f2c2";
+}
+
+.ion-nuclear:before {
+    content: "\f2a4";
+}
+
+.ion-outlet:before {
+    content: "\f342";
+}
+
+.ion-paintbrush:before {
+    content: "\f4d5";
+}
+
+.ion-paintbucket:before {
+    content: "\f4d6";
+}
+
+.ion-paper-airplane:before {
+    content: "\f2c3";
+}
+
+.ion-paperclip:before {
+    content: "\f20f";
+}
+
+.ion-pause:before {
+    content: "\f210";
+}
+
+.ion-person:before {
+    content: "\f213";
+}
+
+.ion-person-add:before {
+    content: "\f211";
+}
+
+.ion-person-stalker:before {
+    content: "\f212";
+}
+
+.ion-pie-graph:before {
+    content: "\f2a5";
+}
+
+.ion-pin:before {
+    content: "\f2a6";
+}
+
+.ion-pinpoint:before {
+    content: "\f2a7";
+}
+
+.ion-pizza:before {
+    content: "\f2a8";
+}
+
+.ion-plane:before {
+    content: "\f214";
+}
+
+.ion-planet:before {
+    content: "\f343";
+}
+
+.ion-play:before {
+    content: "\f215";
+}
+
+.ion-playstation:before {
+    content: "\f30a";
+}
+
+.ion-plus:before {
+    content: "\f218";
+}
+
+.ion-plus-circled:before {
+    content: "\f216";
+}
+
+.ion-plus-round:before {
+    content: "\f217";
+}
+
+.ion-podium:before {
+    content: "\f344";
+}
+
+.ion-pound:before {
+    content: "\f219";
+}
+
+.ion-power:before {
+    content: "\f2a9";
+}
+
+.ion-pricetag:before {
+    content: "\f2aa";
+}
+
+.ion-pricetags:before {
+    content: "\f2ab";
+}
+
+.ion-printer:before {
+    content: "\f21a";
+}
+
+.ion-pull-request:before {
+    content: "\f345";
+}
+
+.ion-qr-scanner:before {
+    content: "\f346";
+}
+
+.ion-quote:before {
+    content: "\f347";
+}
+
+.ion-radio-waves:before {
+    content: "\f2ac";
+}
+
+.ion-record:before {
+    content: "\f21b";
+}
+
+.ion-refresh:before {
+    content: "\f21c";
+}
+
+.ion-reply:before {
+    content: "\f21e";
+}
+
+.ion-reply-all:before {
+    content: "\f21d";
+}
+
+.ion-ribbon-a:before {
+    content: "\f348";
+}
+
+.ion-ribbon-b:before {
+    content: "\f349";
+}
+
+.ion-sad:before {
+    content: "\f34a";
+}
+
+.ion-sad-outline:before {
+    content: "\f4d7";
+}
+
+.ion-scissors:before {
+    content: "\f34b";
+}
+
+.ion-search:before {
+    content: "\f21f";
+}
+
+.ion-settings:before {
+    content: "\f2ad";
+}
+
+.ion-share:before {
+    content: "\f220";
+}
+
+.ion-shuffle:before {
+    content: "\f221";
+}
+
+.ion-skip-backward:before {
+    content: "\f222";
+}
+
+.ion-skip-forward:before {
+    content: "\f223";
+}
+
+.ion-social-android:before {
+    content: "\f225";
+}
+
+.ion-social-android-outline:before {
+    content: "\f224";
+}
+
+.ion-social-angular:before {
+    content: "\f4d9";
+}
+
+.ion-social-angular-outline:before {
+    content: "\f4d8";
+}
+
+.ion-social-apple:before {
+    content: "\f227";
+}
+
+.ion-social-apple-outline:before {
+    content: "\f226";
+}
+
+.ion-social-bitcoin:before {
+    content: "\f2af";
+}
+
+.ion-social-bitcoin-outline:before {
+    content: "\f2ae";
+}
+
+.ion-social-buffer:before {
+    content: "\f229";
+}
+
+.ion-social-buffer-outline:before {
+    content: "\f228";
+}
+
+.ion-social-chrome:before {
+    content: "\f4db";
+}
+
+.ion-social-chrome-outline:before {
+    content: "\f4da";
+}
+
+.ion-social-codepen:before {
+    content: "\f4dd";
+}
+
+.ion-social-codepen-outline:before {
+    content: "\f4dc";
+}
+
+.ion-social-css3:before {
+    content: "\f4df";
+}
+
+.ion-social-css3-outline:before {
+    content: "\f4de";
+}
+
+.ion-social-designernews:before {
+    content: "\f22b";
+}
+
+.ion-social-designernews-outline:before {
+    content: "\f22a";
+}
+
+.ion-social-dribbble:before {
+    content: "\f22d";
+}
+
+.ion-social-dribbble-outline:before {
+    content: "\f22c";
+}
+
+.ion-social-dropbox:before {
+    content: "\f22f";
+}
+
+.ion-social-dropbox-outline:before {
+    content: "\f22e";
+}
+
+.ion-social-euro:before {
+    content: "\f4e1";
+}
+
+.ion-social-euro-outline:before {
+    content: "\f4e0";
+}
+
+.ion-social-facebook:before {
+    content: "\f231";
+}
+
+.ion-social-facebook-outline:before {
+    content: "\f230";
+}
+
+.ion-social-foursquare:before {
+    content: "\f34d";
+}
+
+.ion-social-foursquare-outline:before {
+    content: "\f34c";
+}
+
+.ion-social-freebsd-devil:before {
+    content: "\f2c4";
+}
+
+.ion-social-github:before {
+    content: "\f233";
+}
+
+.ion-social-github-outline:before {
+    content: "\f232";
+}
+
+.ion-social-google:before {
+    content: "\f34f";
+}
+
+.ion-social-google-outline:before {
+    content: "\f34e";
+}
+
+.ion-social-googleplus:before {
+    content: "\f235";
+}
+
+.ion-social-googleplus-outline:before {
+    content: "\f234";
+}
+
+.ion-social-hackernews:before {
+    content: "\f237";
+}
+
+.ion-social-hackernews-outline:before {
+    content: "\f236";
+}
+
+.ion-social-html5:before {
+    content: "\f4e3";
+}
+
+.ion-social-html5-outline:before {
+    content: "\f4e2";
+}
+
+.ion-social-instagram:before {
+    content: "\f351";
+}
+
+.ion-social-instagram-outline:before {
+    content: "\f350";
+}
+
+.ion-social-javascript:before {
+    content: "\f4e5";
+}
+
+.ion-social-javascript-outline:before {
+    content: "\f4e4";
+}
+
+.ion-social-linkedin:before {
+    content: "\f239";
+}
+
+.ion-social-linkedin-outline:before {
+    content: "\f238";
+}
+
+.ion-social-markdown:before {
+    content: "\f4e6";
+}
+
+.ion-social-nodejs:before {
+    content: "\f4e7";
+}
+
+.ion-social-octocat:before {
+    content: "\f4e8";
+}
+
+.ion-social-pinterest:before {
+    content: "\f2b1";
+}
+
+.ion-social-pinterest-outline:before {
+    content: "\f2b0";
+}
+
+.ion-social-python:before {
+    content: "\f4e9";
+}
+
+.ion-social-reddit:before {
+    content: "\f23b";
+}
+
+.ion-social-reddit-outline:before {
+    content: "\f23a";
+}
+
+.ion-social-rss:before {
+    content: "\f23d";
+}
+
+.ion-social-rss-outline:before {
+    content: "\f23c";
+}
+
+.ion-social-sass:before {
+    content: "\f4ea";
+}
+
+.ion-social-skype:before {
+    content: "\f23f";
+}
+
+.ion-social-skype-outline:before {
+    content: "\f23e";
+}
+
+.ion-social-snapchat:before {
+    content: "\f4ec";
+}
+
+.ion-social-snapchat-outline:before {
+    content: "\f4eb";
+}
+
+.ion-social-tumblr:before {
+    content: "\f241";
+}
+
+.ion-social-tumblr-outline:before {
+    content: "\f240";
+}
+
+.ion-social-tux:before {
+    content: "\f2c5";
+}
+
+.ion-social-twitch:before {
+    content: "\f4ee";
+}
+
+.ion-social-twitch-outline:before {
+    content: "\f4ed";
+}
+
+.ion-social-twitter:before {
+    content: "\f243";
+}
+
+.ion-social-twitter-outline:before {
+    content: "\f242";
+}
+
+.ion-social-usd:before {
+    content: "\f353";
+}
+
+.ion-social-usd-outline:before {
+    content: "\f352";
+}
+
+.ion-social-vimeo:before {
+    content: "\f245";
+}
+
+.ion-social-vimeo-outline:before {
+    content: "\f244";
+}
+
+.ion-social-whatsapp:before {
+    content: "\f4f0";
+}
+
+.ion-social-whatsapp-outline:before {
+    content: "\f4ef";
+}
+
+.ion-social-windows:before {
+    content: "\f247";
+}
+
+.ion-social-windows-outline:before {
+    content: "\f246";
+}
+
+.ion-social-wordpress:before {
+    content: "\f249";
+}
+
+.ion-social-wordpress-outline:before {
+    content: "\f248";
+}
+
+.ion-social-yahoo:before {
+    content: "\f24b";
+}
+
+.ion-social-yahoo-outline:before {
+    content: "\f24a";
+}
+
+.ion-social-yen:before {
+    content: "\f4f2";
+}
+
+.ion-social-yen-outline:before {
+    content: "\f4f1";
+}
+
+.ion-social-youtube:before {
+    content: "\f24d";
+}
+
+.ion-social-youtube-outline:before {
+    content: "\f24c";
+}
+
+.ion-soup-can:before {
+    content: "\f4f4";
+}
+
+.ion-soup-can-outline:before {
+    content: "\f4f3";
+}
+
+.ion-speakerphone:before {
+    content: "\f2b2";
+}
+
+.ion-speedometer:before {
+    content: "\f2b3";
+}
+
+.ion-spoon:before {
+    content: "\f2b4";
+}
+
+.ion-star:before {
+    content: "\f24e";
+}
+
+.ion-stats-bars:before {
+    content: "\f2b5";
+}
+
+.ion-steam:before {
+    content: "\f30b";
+}
+
+.ion-stop:before {
+    content: "\f24f";
+}
+
+.ion-thermometer:before {
+    content: "\f2b6";
+}
+
+.ion-thumbsdown:before {
+    content: "\f250";
+}
+
+.ion-thumbsup:before {
+    content: "\f251";
+}
+
+.ion-toggle:before {
+    content: "\f355";
+}
+
+.ion-toggle-filled:before {
+    content: "\f354";
+}
+
+.ion-transgender:before {
+    content: "\f4f5";
+}
+
+.ion-trash-a:before {
+    content: "\f252";
+}
+
+.ion-trash-b:before {
+    content: "\f253";
+}
+
+.ion-trophy:before {
+    content: "\f356";
+}
+
+.ion-tshirt:before {
+    content: "\f4f7";
+}
+
+.ion-tshirt-outline:before {
+    content: "\f4f6";
+}
+
+.ion-umbrella:before {
+    content: "\f2b7";
+}
+
+.ion-university:before {
+    content: "\f357";
+}
+
+.ion-unlocked:before {
+    content: "\f254";
+}
+
+.ion-upload:before {
+    content: "\f255";
+}
+
+.ion-usb:before {
+    content: "\f2b8";
+}
+
+.ion-videocamera:before {
+    content: "\f256";
+}
+
+.ion-volume-high:before {
+    content: "\f257";
+}
+
+.ion-volume-low:before {
+    content: "\f258";
+}
+
+.ion-volume-medium:before {
+    content: "\f259";
+}
+
+.ion-volume-mute:before {
+    content: "\f25a";
+}
+
+.ion-wand:before {
+    content: "\f358";
+}
+
+.ion-waterdrop:before {
+    content: "\f25b";
+}
+
+.ion-wifi:before {
+    content: "\f25c";
+}
+
+.ion-wineglass:before {
+    content: "\f2b9";
+}
+
+.ion-woman:before {
+    content: "\f25d";
+}
+
+.ion-wrench:before {
+    content: "\f2ba";
+}
+
+.ion-xbox:before {
+    content: "\f30c";
+}
+
+/* The main calendar widget.  DIV containing a table. */
+
+div.calendar {
+    position: relative;
+    z-index: 10001;
+}
+
+.calendar {
+    -moz-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.6);
+    /*border: 1px solid #cccccc;*/
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.calendar table {
+    font-size: 11px;
+    color: #000;
+    cursor: default;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button {
+    /* "<<", "<", ">", ">>" buttons have this class */
+    text-align: center;
+    /* They are the navigation buttons */
+    padding: 5px;
+    /* Make the buttons seem like they're pressing */
+}
+
+.calendar .nav {
+    background: url(menuarrow.gif) no-repeat 100% 100%;
+}
+
+.calendar thead .title {
+    /* This holds the current "month, year" */
+    font-weight: 600;
+    /* Pressing it will take you to the current date */
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 2px;
+}
+
+.calendar thead .headrow {
+    /* Row <TR> containing navigation buttons */
+    background: #fff;
+    color: #777;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+
+.calendar thead .daynames {
+    /* Row <TR> containing the day names */
+    background: none;
+}
+
+.calendar thead .name {
+    /* Cells <TD> containing the day names */
+    background: #1484ad;
+    padding: 8px 7px;
+    text-align: center;
+    color: #fff;
+}
+
+.calendar thead .weekend {
+    /* How a weekend day name shows in header */
+    color: #fff;
+}
+
+.calendar thead .hilite {
+    /* How do the buttons in header appear when hover */
+    /*background-color: #aaf;*/
+    color: #fff;
+    background: #0e79a0;
+    /*	border: 1px solid #04f;*/
+}
+
+.calendar thead .active {
+    background: #0e79a0;
+    /* Active (pressed) buttons in header */
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day {
+    /* Cells <TD> containing month days dates */
+    width: auto;
+    color: #666666;
+    text-align: center;
+    padding: 5px 8px;
+}
+
+.calendar tbody .day.hilite {}
+
+.calendar tbody .day.othermonth {
+    font-size: 80%;
+    color: #bbb;
+}
+
+.calendar tbody .day.othermonth.oweekend {
+    color: #fbb;
+}
+
+.calendar table .wn {
+    padding: 2px 3px 2px 2px;
+    border-right: 1px solid #000;
+    background: #fff;
+}
+
+.calendar tbody .rowhilite td {
+    background: #f6f6f6;
+}
+
+.calendar tbody .rowhilite td.wn {}
+
+.calendar tbody td.hilite {
+    background: #fff;
+    border: solid 1px #1484ad;
+    color: #1484ad;
+    cursor: pointer;
+}
+
+/* Hovered cells <TD> */
+
+.calendar tbody td.active {
+    /* Active (pressed) cells <TD> */
+    background: #fff;
+    border: solid 1px #1484ad;
+    color: #1484ad;
+}
+
+.calendar tbody td.selected {
+    /* Cell showing today date */
+    background: #fff;
+    border: solid 1px #1484ad;
+    color: #1484ad;
+}
+
+.calendar tbody td.weekend {
+    /* Cells showing weekend days */
+    color: #000;
+}
+
+.calendar tbody td.today {
+    /* Cell showing selected date */
+    font-weight: 600;
+    color: #1484ad;
+}
+
+.calendar tbody .disabled {
+    color: #999;
+}
+
+.calendar tbody .emptycell {
+    /* Empty cells (the best is to hide them) */
+    visibility: hidden;
+}
+
+.calendar tbody .emptyrow {
+    /* Empty row (some months need less than 6 rows) */
+    display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow {
+    /* The <TR> in footer (only one right now) */
+    text-align: center;
+    background: #556;
+    color: #fff;
+}
+
+.calendar tfoot .ttip {
+    /* Tooltip (status bar) cell <TD> */
+    background: #fff;
+    color: #777;
+    border-top: 1px solid #d7d7d7;
+    padding: 10px;
+}
+
+.calendar tfoot .hilite {
+    /* Hover style for buttons in footer */
+    background: #aaf;
+    border: 1px solid #04f;
+    color: #000;
+    padding: 1px;
+}
+
+.calendar tfoot .active {
+    /* Active (pressed) style for buttons in footer */
+    background: #77c;
+    padding: 2px 0px 0px 2px;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.calendar .combo {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 4em;
+    cursor: default;
+    border: 1px solid #655;
+    background: #def;
+    color: #000;
+    font-size: 90%;
+    z-index: 100;
+}
+
+.calendar .combo .label, .calendar .combo .label-IEfix {
+    text-align: center;
+    padding: 1px;
+}
+
+.calendar .combo .label-IEfix {
+    width: 4em;
+}
+
+.calendar .combo .hilite {
+    background: #acf;
+}
+
+.calendar .combo .active {
+    border-top: 1px solid #46a;
+    border-bottom: 1px solid #46a;
+    background: #eef;
+    font-weight: bold;
+}
+
+.calendar td.time {
+    border-top: 1px solid #d7d7d7;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.calendar td.time .hour, .calendar td.time .minute, .calendar td.time .ampm {
+    padding: 5px 8px;
+    border: 1px solid #d7d7d7;
+    color: #666666;
+    margin: 0 8px;
+    background-color: #fff;
+}
+
+.calendar td.time .ampm {
+    text-align: center;
+}
+
+.calendar td.time .colon {}
+
+.calendar td.time span.hilite {
+    border-color: #1484ad;
+    background-color: #1484ad;
+    color: #fff;
+}
+
+.calendar td.time span.active {
+    border-color: #0e79a0;
+    background-color: #0e79a0;
+    color: #fff;
+}
+
+#facebox .tl {
+    background: url(/facebox/tl.png);
+}
+
+#facebox .tr {
+    background: url(/facebox/tr.png);
+}
+
+#facebox .bl {
+    background: url(/facebox/bl.png);
+}
+
+#facebox .br {
+    background: url(/facebox/br.png);
+}
+
+#facebox {
+    position: fixed;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0;
+    z-index: 10000;
+    text-align: left;
+}
+
+/* #facebox { left: 50% !important; position: absolute; text-align: left; top: 40% !important; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index: 10000; } */
+
+#facebox .popup {
+    position: relative;
+    display: table;
+    height: 100%;
+}
+
+#facebox .popup table {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+#facebox .popup table table {
+    display: table;
+    width: 100%;
+}
+
+#facebox td {
+    border-bottom: 0;
+    padding: 0;
+}
+
+#facebox .body {
+    background: #f5f5f5;
+    max-width: 600px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#facebox .formWrap table tr td {
+    vertical-align: middle;
+}
+
+#facebox .loading {
+    text-align: center;
+}
+
+#facebox .image {
+    text-align: center;
+}
+
+#facebox img {
+    border: 0;
+    margin: 0;
+}
+
+#facebox .footer {
+    /* margin-top: 10px; text-align: right;*/
+    /* position: absolute; right: -15px; top: -15px; border-radius:100%; background:#000; height:35px; width:35px; text-align:center; line-height:37px;*/
+    position: absolute;
+    right: 3px;
+    top: 9px;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+#facebox .footer .ion-close-round {
+    color: #fff;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+    padding: 0;
+    display: none;
+}
+
+#facebox_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7 !important;
+}
+
+.facebox_hide {
+    z-index: -100;
+}
+
+.facebox_overlayBG {
+    background-color: #000;
+    z-index: 99;
+}
+
+* html #facebox_overlay {
+    /* ie6 hack */
+    position: absolute;
+    height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight: document.body.offsetHeight + 'px');
+}
+
+/*----edit by avtar--*/
+
+#facebox .popup h2 {
+    background: none repeat scroll 0 0 #3e434a;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px 2px 0 0;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 26px;
+}
+
+#facebox .leftPanel table {
+    padding: 10px 20px;
+}
+
+#facebox .theme-btn {
+    border-radius: 3px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.close {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: -26x;
+    top: -26px;
+    width: 36px;
+    background: url(/facebox/fancybox_sprite.png) no-repeat 0 0;
+}
+
+/*----popup login page style ----*/
+
+#facebox .popup .login-pages {
+    margin: 0;
+    padding-top: 0;
+    position: relative;
+    min-width: 400px;
+    width: 100%;
+}
+
+#facebox .popup .login-pages .gray-background {
+    padding: 0px;
+    border-radius: 3px;
+}
+
+#facebox .popup .login-pages h2 {
+    background: none;
+    border-bottom: none;
+    margin: 0px;
+    padding: 0;
+}
+
+#facebox .popup .login-pages table td {
+    padding: 10px 20px;
+}
+
+#facebox .popup .login-pages .theme-btn {
+    margin-top: 0px;
+}
+
+#facebox .upload-profile table td {
+    padding: 0 5px;
+}
+
+#facebox .upload-profile table td span {
+    font-size: 13px;
+}
+
+@media screen and (min-width:501px) and (max-width: 800px) {
+    #facebox {
+        width: 500px!important;
+        left: 50%!important;
+        margin: 0 0 0 -250px;
+    }
+    #facebox .leftPanel tr td {
+        padding: 0 2px;
+        vertical-align: top;
+    }
+    #facebox .popup .login-pages {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #facebox {
+        width: 300px!important;
+        left: 50%!important;
+        margin: 0 0 0 -150px;
+    }
+    #facebox .leftPanel tr td {
+        padding: 0px;
+        display: block;
+        width: 100%;
+    }
+    #facebox .leftPanel h2 {
+        font-size: 16px;
+    }
+    #facebox .leftPanel tr td:first-child {
+        text-align: center;
+    }
+    #facebox .leftPanel table {
+        padding: 0px 10px 10px 10px;
+    }
+    #facebox .popup .login-pages {
+        width: 100%;
+    }
+    #facebox .popup .login-pages h2 {
+        font-size: 18px;
+    }
+    #facebox .popup .login-pages .gray-background {
+        padding-top: 10px;
+    }
+    #facebox .footer {
+        /*width:35px; height:35px; line-height:35px; right:-7px; top:-7px;*/
+    }
+    #facebox .popup .login-pages table td {
+        padding: 5px 10px;
+    }
+    #facebox .popup .login-pages {
+        min-width: inherit;
+    }
+    .close {
+        top: -4px;
+        right: 4px;
+    }
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+@import "calendar.css";
+/* Global Reset & Standards ---------------------- */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'OpenSans';
+    line-height: normal;
+}
+
+html {
+    -webkit-text-size-adjust: auto;
+    /* Automatically adjusted for Safari on iPhone. */
+    -ms-text-size-adjust: auto;
+}
+
+body {
+    background: #fff;
+    font-family: 'OpenSans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    color: #222222;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.42857;
+}
+
+html, body {
+    height: 100%;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
+    display: block;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+/* Links ---------------------- */
+
+a {
+    color: #064C71;
+    text-decoration: none;
+    line-height: inherit;
+    outline: none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+a:hover {
+    color: #333;
+}
+
+p a, p a:visited {
+    line-height: inherit;
+}
+
+/* Reset for strange margins by default on <figure> elements */
+
+figure {
+    margin: 0;
+}
+
+/* Base Type Styles Using Modular Scale ---------------------- */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    direction: ltr;
+}
+
+/* Lists ---------------------- */
+
+ul, ol, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li ul, ul li ol {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+ol li ul, ol li ol {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* inpput */
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+strong {
+    font-family: 'OpenSans-Semibold';
+    font-weight: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Misc ---------------------- */
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.highlight {
+    background: #ffff99;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.noborder {
+    border: none !important;
+}
+
+.none_transition {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.clearfix {}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.gap {
+    height: 15px;
+    display: block;
+    clear: both;
+}
+
+.aligncenter {
+    text-align: center !important;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.nobackground {
+    background: none !important;
+}
+
+.nomargin_bottom {
+    margin-bottom: 0 !important;
+}
+
+.nomargin_right {
+    margin-right: 0 !important;
+}
+
+.img_responsive {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.img_rounded {
+    border-radius: 6px;
+}
+
+.img_circle {
+    border-radius: 500px;
+}
+
+/* listings */
+
+.listing_bullets {
+    width: 100%;
+}
+
+.listing_bullets li {
+    list-style: disc inside;
+    padding: 0 0 5px 0;
+}
+
+.listing_bullets.white li {
+    color: #FFF;
+}
+
+.listing_numbers {
+    width: 100%;
+}
+
+.listing_numbers li {
+    list-style: decimal inside;
+    padding: 0 0 5px 0;
+}
+
+.listing_numbers.white li {
+    color: #FFF;
+}
+
+.listing_arrows {
+    width: 100%;
+}
+
+.listing_arrows li {
+    list-style: none;
+    padding: 0 0 10px 15px;
+    position: relative;
+    color: #666;
+    font-size: 13px;
+}
+
+.listing_arrows.white li {
+    color: #FFF;
+}
+
+.listing_arrows.white li:before {
+    border-left: 5px solid #fff;
+}
+
+.listing_arrows li:before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 5px;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #666;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+}
+
+ul.listing_square {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listing_square li {
+    display: block;
+    margin: 0;
+    padding: 0 0 10px 15px;
+    font-size: 13px;
+    color: #666;
+    position: relative;
+}
+
+ul.listing_square li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+ul.listing_square li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 6px;
+    background: #666;
+    position: absolute;
+}
+
+ul.listing_rounds {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listing_rounds li {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 0 10px 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+ul.listing_rounds li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+ul.listing_rounds li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 6px;
+    background: #666;
+    position: absolute;
+    border-radius: 5px;
+}
+
+/* tables */
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.table th {
+    padding: 10px;
+    text-align: left;
+}
+
+.table.striped td {
+    border-bottom: 1px solid #e6e2e2;
+}
+
+.table.striped th {
+    border-bottom: 1px solid #e6e2e2;
+    border-bottom: 1px solid #e6e2e2;
+    background-color: #f1f0ef;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+.table.bordered {
+    border: 1px solid #e6e2e2;
+}
+
+.table.bordered td {
+    border-bottom: 1px solid #e6e2e2;
+}
+
+.table.bordered tr:last-child td {
+    border-bottom: none;
+}
+
+.table.bordered th {
+    border-bottom: 1px solid #e6e2e2;
+    background-color: #f1f0ef;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+.table.rounded {
+    border-radius: 4px;
+}
+
+.table.rounded th:first-child {
+    border-radius: 4px 0 0 0;
+}
+
+.table.rounded th:last-child {
+    border-radius: 0 4px 0 0;
+}
+
+.table.rounded tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+.table.rounded tr:last-child td:last-child {
+    border-radius: 0 0 4px 0;
+}
+
+/* forms css */
+
+/* form css*/
+
+input::-moz-focus-inner
+/*Remove button padding in FF*/
+
+    {
+    border: 0;
+    padding: 0;
+}
+
+.siteForm input[type="text"] {
+    width: 100%;
+    background: #FFFFFF;
+    height: 39px;
+    line-height: 100%;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #7a7a7a;
+    padding: 0 10px;
+    margin: 0 0 0 0;
+    border-radius: 2px;
+    border-left: 1px solid #d5d4d3;
+    border-top: 1px solid #d5d4d3;
+    border-right: 1px solid #bcbcbb;
+    border-bottom: 1px solid #bcbcbb;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.siteForm input[type="text"]:focus {
+    border-color: #009148;
+    -webkit-box-shadow: 0 0 5px #67afc9;
+    -moz-box-shadow: 0 0 5px #67afc9;
+    box-shadow: 0 0 5px #67afc9;
+}
+
+.siteForm input[type="password"] {
+    width: 100%;
+    background: #FFFFFF;
+    height: 39px;
+    line-height: 39px;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #7a7a7a;
+    padding: 0 10px;
+    margin: 0 0 0 0;
+    border-radius: 2px;
+    border-left: 1px solid #d5d4d3;
+    border-top: 1px solid #d5d4d3;
+    border-right: 1px solid #bcbcbb;
+    border-bottom: 1px solid #bcbcbb;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.siteForm input[type="password"]:focus {
+    border-color: #009148;
+    -webkit-box-shadow: 0 0 5px #67afc9;
+    -moz-box-shadow: 0 0 5px #67afc9;
+    box-shadow: 0 0 5px #67afc9;
+}
+
+.siteForm textarea {
+    width: 100%;
+    background: #FFFFFF;
+    font-family: 'OpenSans';
+    height: 100px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #7a7a7a;
+    padding: 10px;
+    margin: 0 0 0 0;
+    border-radius: 2px;
+    border-left: 1px solid #d5d4d3;
+    border-top: 1px solid #d5d4d3;
+    border-right: 1px solid #bcbcbb;
+    border-bottom: 1px solid #bcbcbb;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.siteForm textarea:focus {
+    border-color: #009148;
+    -webkit-box-shadow: 0 0 5px #67afc9;
+    -moz-box-shadow: 0 0 5px #67afc9;
+    box-shadow: 0 0 5px #67afc9;
+}
+
+.siteForm select {
+    width: 100%;
+    background: #FFFFFF;
+    font-size: 13px;
+    color: #7a7a7a;
+    padding: 10px;
+    line-height: 34px;
+    margin: 0 0 0 0;
+    border-radius: 2px;
+    border-left: 1px solid #d5d4d3;
+    border-top: 1px solid #d5d4d3;
+    border-right: 1px solid #bcbcbb;
+    border-bottom: 1px solid #bcbcbb;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.siteForm select:focus {
+    border-color: #009148;
+    -webkit-box-shadow: 0 0 5px #67afc9;
+    -moz-box-shadow: 0 0 5px #67afc9;
+    box-shadow: 0 0 5px #67afc9;
+}
+
+.siteForm input[type="submit"] {
+    background: #069c43;
+    padding: 6px 25px 7px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    -webkit-appearance: none;
+    font-family: 'OpenSans-Semibold';
+    border-radius: 3px;
+    /* Opera 10.5+ */
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.siteForm input[type="submit"]:hover {
+    background: #252525;
+}
+
+.siteForm input[type="reset"] {
+    background: #666;
+    padding: 6px 25px 7px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    -webkit-appearance: none;
+    font-family: 'OpenSans-Semibold';
+    border-radius: 3px;
+    /* Opera 10.5+ */
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.siteForm input[type="reset"]:hover {
+    background: #252525;
+}
+
+.siteForm input[type="button"] {
+    background: #C31422;
+    padding: 7px 25px 7px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    -webkit-appearance: none;
+    font-family: 'OpenSans-Semibold';
+    border-radius: 3px;
+    /* Opera 10.5+ */
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.siteForm input[type="button"]:hover {
+    background: #252525;
+}
+
+.siteForm input[type="text"].normal {
+    width: 50%!important;
+}
+
+.siteForm input[type="text"].small {
+    width: 200px!important;
+}
+
+.siteForm input[type="text"].medium {
+    width: 400px!important;
+}
+
+.siteForm input[type="text"].large {
+    width: 700px!important;
+}
+
+.siteForm input[type="password"].normal {
+    width: 50%!important;
+}
+
+.siteForm input[type="password"].small {
+    width: 200px!important;
+}
+
+.siteForm input[type="password"].medium {
+    width: 400px!important;
+}
+
+.siteForm input[type="password"].large {
+    width: 700px!important;
+}
+
+.siteForm select.normal {
+    width: 50%!important;
+}
+
+.siteForm select.small {
+    width: 200px!important;
+}
+
+.siteForm select.medium {
+    width: 400px!important;
+}
+
+.siteForm select.large {
+    width: 700px!important;
+}
+
+.siteForm textarea.normal {
+    width: 50%!important;
+}
+
+.siteForm textarea.small {
+    width: 200px!important;
+}
+
+.siteForm textarea.medium {
+    width: 400px!important;
+}
+
+.siteForm textarea.large {
+    width: 700px!important;
+}
+
+.siteForm .errors {
+    border: 1px solid #f72a2a;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2) inset, 0 0 3px 1px #f72a2a!important;
+}
+
+.width100 {
+    width: 100px!important;
+}
+
+.width200 {
+    width: 200px!important;
+}
+
+.width300 {
+    width: 300px!important;
+}
+
+.mandatory {
+    color: #FF0000;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection {
+    background: #58b7e3;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #58b7e3;
+    color: #fff;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+::input-placeholder {
+    color: #979797;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+input::webkit-input-placeholder {
+    color: #979797;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+input:-moz-placeholder {
+    color: #979797;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+input::-moz-placeholder {
+    /* Older versions of Firefox */
+    color: #979797;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+input:-ms-input-placeholder {
+    color: #979797;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* typography */
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('fonts/opensansbold.eot');
+    src: url('fonts/opensansbold.eot?#iefix') format('embedded-opentype'), url('fonts/opensansbold.woff') format('woff'), url('fonts/opensansbold.ttf') format('truetype'), url('fonts/opensansbold.svg#opensansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('fonts/opensanslight.eot');
+    src: url('fonts/opensanslight.eot?#iefix') format('embedded-opentype'), url('fonts/opensanslight.woff') format('woff'), url('fonts/opensanslight.ttf') format('truetype'), url('fonts/opensanslight.svg#opensanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/opensansregular.eot');
+    src: url('fonts/opensansregular.eot?#iefix') format('embedded-opentype'), url('fonts/opensansregular.woff') format('woff'), url('fonts/opensansregular.ttf') format('truetype'), url('fonts/opensansregular.svg#opensansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('fonts/opensanssemibold.eot');
+    src: url('fonts/opensanssemibold.eot?#iefix') format('embedded-opentype'), url('fonts/opensanssemibold.woff') format('woff'), url('fonts/opensanssemibold.ttf') format('truetype'), url('fonts/opensanssemibold.svg#opensanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*********** main css ************/
+
+/* login forms */
+
+.frontbg {
+    background: #009148;
+}
+
+.frontForms {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    padding: 160px 0 0 0;
+}
+
+.frontLogo {
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+}
+
+.whitesection {
+    width: 100%;
+    padding: 40px;
+    background: #FFF;
+    margin: 20px 0 0 0;
+}
+
+.whitesection input[type="text"], .whitesection input[type="password"] {
+    width: 100%;
+    background: #FFFFFF;
+    height: 46px;
+    line-height: 46px;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #333;
+    padding: 0 10px;
+    margin: 0 0 0 0;
+    border: 1px solid #cbcbcb;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-box-shadow: inset 0 0 4px #cfcfcf;
+    -webkit-box-shadow: inset 0 0 4px #cfcfcf;
+    box-shadow: inset 0 0 4px #cfcfcf;
+}
+
+.whitesection input[type="text"]:focus, .whitesection input[type="password"]:focus {
+    border-color: #009148;
+    -webkit-box-shadow: inset 0 1px 1px #dedbdb, 0 0 8px #73afc5;
+    -moz-box-shadow: inset 0 1px 1px #dedbdb, 0 0 8px #73afc5;
+    box-shadow: inset 0 1px 1px #dedbdb, 0 0 8px #73afc5;
+}
+
+.whitesection input[type="submit"] {
+    background: #006a33;
+    padding: 15px 20px 15px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    width: 100%;
+    display: block;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.whitesection input[type="submit"]:hover {
+    background: #252525;
+}
+
+.whitesection .ptext {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #252525;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.whitesection .ptext a {
+    font-family: 'OpenSans-Bold';
+}
+
+.whitesection .ptext a:hover {
+    color: #252525;
+}
+
+.whitesection input[type="text"].usericon {
+    background: #fff url(/images/user.png) no-repeat 96% 12px;
+    padding-right: 45px;
+}
+
+.whitesection input[type="password"].keyicon {
+    background: #fff url(/images/key.png) no-repeat 96% 12px;
+    padding-right: 45px;
+}
+
+.captcha {
+    float: left;
+}
+
+.reload {
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+/* wrapper */
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    min-width: 1200px;
+}
+
+/* header */
+
+#header {
+    width: 100%;
+    position: relative;
+    z-index: 88;
+}
+
+.topBar {
+    background: #009148;
+    border-top: 5px solid #006a33;
+}
+
+.logo {
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.topLinks {
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.topLinks li {
+    float: left;
+    margin: 0;
+    position: relative;
+}
+
+.topLinks li a {
+    z-index: 99;
+    position: relative;
+    display: block;
+    height: 48px;
+    padding: 13px 40px 13px 20px;
+    border-left: 1px solid #006a33;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+
+.topLinks li a .arrow {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.topLinks li a .arrow:before {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+.topLinks .redtext {
+    color: #fff;
+    font-family: 'OpenSans-Semibold';
+}
+
+.topLinks li:hover a {
+    color: #FFF;
+}
+
+.topLinks li:hover .redtext {
+    color: #FFF;
+}
+
+.topLinks li:hover .arrow:before {
+    border-top: 5px solid #fff;
+}
+
+.topLinks li a:hover {
+    background: #3d4249;
+}
+
+.topLinks li a.current {
+    background: #053648;
+}
+
+.dropWrapper {
+    position: absolute;
+    width: 100%;
+    display: none;
+    right: 0;
+    top: 110%;
+    z-index: 999;
+}
+
+.dropWrapper .inner {
+    background: #FFF;
+    position: relative;
+    -moz-box-shadow: 0 10px 14px #c1c1c1;
+    -webkit-box-shadow: 0 10px 14px #c1c1c1;
+    box-shadow: 0 10px 14px #c1c1c1;
+    padding: 10px;
+    margin: -5px 0 0 0;
+}
+
+.dropWrapper .inner:before {
+    position: absolute;
+    right: 18px;
+    top: -8px;
+    content: "";
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+}
+
+.topLinks li:hover .dropWrapper {
+    display: block;
+}
+
+.topLinks li:hover a {
+    color: #FFF;
+    background: #3d4249;
+}
+
+.dropLinks {
+    margin: 0;
+    padding: 0;
+}
+
+.dropLinks li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropLinks li a {
+    background: none !important;
+    height: auto !important;
+    font-size: 13px;
+    color: #333 !important;
+    text-transform: uppercase;
+    border-left: none;
+    display: block;
+    margin: 0;
+    padding: 8px;
+}
+
+.dropLinks li a:hover {
+    background: #3d4249!important;
+    color: #fff !important;
+}
+
+.dropLinks li:last-child {
+    border-bottom: none;
+}
+
+.timesection {
+    float: right;
+    border-left: 1px solid #006a33;
+    padding: 5px 20px 11px;
+    height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.timesection .date {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'OpenSans-Bold';
+}
+
+.timesection .time {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'OpenSans-Light';
+    line-height: 12px;
+}
+
+/* navigations */
+
+.navWrap {
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    position: relative;
+    padding: 0 0;
+    background: #FFF;
+    -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2)
+}
+
+.navigations {
+    text-align: center;
+    font-size: 0;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.navigations .fixedWrap {
+    width: auto;
+}
+
+.navigations li {
+    cursor: pointer;
+    display: inline-block;
+    border-right: 1px solid #dfdddd;
+    text-align: center;
+    padding: 0 0 0 1px
+}
+
+.navigations li a {
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 13px;
+    display: inline-block;
+    color: #8F8F8F;
+    padding: 10px 15px;
+}
+
+.navigations li a img {
+    display: table;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.navigations li:hover {
+    background: #efefee;
+}
+
+.navigations li:hover a {
+    color: #333;
+}
+
+.navigations li:hover a img {
+    opacity: 1;
+}
+
+.navigations li:first-child {
+    border-left: 1px solid #dfdddd;
+}
+
+.navigations li.current {
+    background: #efefee;
+}
+
+.navigations li.current a {
+    color: #333;
+}
+
+.navigations li.current a img {
+    opacity: 1;
+}
+
+.navigations .fixedWrap ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigations .fixedWrap ul li {
+    border-right: none;
+    float: left;
+    width: 33%;
+    float: left;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.navigations .fixedWrap ul li a {
+    font-family: 'OpenSans';
+    position: relative;
+    border-right: none;
+    font-size: 13px;
+    color: #333;
+    padding: 0 0 0 15px;
+}
+
+.navigations .fixedWrap ul li a:before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #333;
+}
+
+.navigations .fixedWrap ul li:first-child {
+    border-left: none;
+}
+
+.navigations .fixedWrap ul li a:hover {
+    color: #069c43;
+}
+
+.navigations .fixedWrap ul li a:hover:before {
+    border-left: 4px solid #069c43;
+}
+
+/* body */
+
+#body {
+    padding: 0 0 0 0;
+    background: #ededed;
+    min-height: 100%;
+}
+
+.breadcrumb {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.breadcrumb li {
+    float: left;
+    font-size: 15px;
+    color: #053648;
+    padding: 0 0 0 8px;
+    font-style: bold;
+    font-family: 'OpenSans-Light';
+}
+
+.breadcrumb li:first-child {
+    padding-left: 0;
+}
+
+.breadcrumb li a {
+    position: relative;
+    display: block;
+    height: 18px;
+    font-size: 13px;
+    color: #9a9a9a;
+    padding: 0 15px 0 0;
+    /*background:url(images/crumb_arrow.png) no-repeat right 3px;*/
+}
+
+.breadcrumb li a:hover {
+    color: #c31422;
+}
+
+.breadcrumb li a img {
+    float: left;
+    margin: 3px 0 0 0;
+}
+
+.breadcrumb li a:before {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    content: "/";
+    font-size: 16px;
+    color: #9a9a9a;
+}
+
+.rightPanel .title {
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.rightPanel .title h2 {
+    display: inline;
+    font-size: 38px;
+    color: #000000;
+    line-height: 1;
+    font-family: 'OpenSans-Light';
+    font-style: bold;
+}
+
+.rightPanel .title .button {
+    float: right;
+}
+
+input.button {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+    padding: 8px 20px 8px;
+    text-decoration: none;
+    line-height: normal;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+a.button:hover {
+    background: #252525;
+}
+
+input.button:hover {
+    background: #252525;
+}
+
+a.button {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+    padding: 8px 20px 8px;
+    text-decoration: none;
+    line-height: normal;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+a.button.small {
+    padding: 4px 10px 6px;
+    line-height: 1;
+    font-size: 12px;
+}
+
+a.button.big {
+    padding: 9px 18px;
+}
+
+input.button.small {
+    padding: 4px 10px 6px;
+    font-size: 12px;
+}
+
+input.button.big {
+    padding: 8px 18px;
+}
+
+.button.green {
+    background: #069C43;
+}
+
+.button.red {
+    background: #DF3030;
+}
+
+.button.blue {
+    background: #2C99F5;
+}
+
+.button.orange {
+    background: #E3B822;
+}
+
+.button.purple {
+    background: #BC66BB;
+}
+
+.button.yellow {
+    background: #EFDB2F;
+    color: #666666;
+}
+
+.button.yellow:hover {
+    color: #fff;
+}
+
+.button.black {
+    background: #555555;
+    color: #DDDDDD;
+}
+
+.button.grey {
+    background: #DBDBDB;
+    color: #666666;
+}
+
+.button.grey:hover {
+    color: #fff;
+}
+
+.button.disabled {
+    box-shadow: none !important;
+    color: #666666;
+    cursor: default !important;
+}
+
+/* left panel */
+
+.leftPanel {
+    background: #ededed;
+    width: 230px;
+    position: relative;
+    z-index: 55;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.leftPanel.addtop {
+    top: 67px;
+}
+
+.searchWrap {
+    background: #CBCCD0;
+    padding: 10px;
+}
+
+.searchBar {
+    display: block;
+    width: 210px;
+    background: #FFF;
+    margin: 0;
+    -moz-box-shadow: 2px 2px 0 #B6B6B6;
+    -webkit-box-shadow: 2px 2px 0 #B6B6B6;
+    box-shadow: 1px 1px 0 #B6B6B6;
+    padding: 5px 10px;
+    height: 35px;
+}
+
+.searchBar input[type="text"] {
+    height: 24px;
+    line-height: 24px;
+    line-height: 24px;
+    width: 80%;
+    font-family: 'OpenSans-Light';
+    color: #6f6f6f;
+    font-size: 14px;
+    float: left;
+    vertical-align: middle;
+    padding: 0 0;
+    background: none;
+    border: none;
+}
+
+.searchBar input[type="submit"] {
+    background: url(images/magnifier.png) no-repeat;
+    width: 24px;
+    height: 23px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+
+ul.leftNavs {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 99;
+}
+
+ul.leftNavs li {
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0;
+    padding: 0;
+}
+
+ul.leftNavs li a {
+    border-left: 4px solid #ededed;
+    display: block;
+    font-size: 13px;
+    color: #737373;
+    text-decoration: none;
+    margin: 0;
+    padding: 12px;
+}
+
+ul.leftNavs li a:hover {
+    background: #fff;
+    color: #069c43;
+    border-left: 4px solid #069c43;
+}
+
+ul.leftNavs li a.selected {
+    background: #fff;
+    color: #053648;
+    margin: 0 -1px -1px 0;
+    border-left: 4px solid #053648;
+}
+
+/* rightPanel */
+
+.rightPanel {
+    margin: 0 0 0 230px;
+    padding: 20px 15px 15px;
+    background: #FFF;
+    min-height: 870px;
+    display: block;
+}
+
+.rightPanel.wide {
+    margin: 0 0 0 0;
+    width: 100%;
+    min-height: inherit;
+}
+
+.formTable {
+    width: 100%;
+}
+
+.formTable td {
+    padding: 0 15px 15px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.formTable td.firstchild {
+    width: 30%;
+}
+
+.formTable td:last-child {
+    padding-right: 0;
+}
+
+.formTable .label {
+    width: 100%;
+    display: inline-block;
+}
+
+.formTable tr:last-child td {
+    padding-bottom: 0;
+}
+
+.threeCol {
+    width: 100%;
+}
+
+.threeCol td {
+    width: 33%;
+    vertical-align: bottom;
+}
+
+.threeCol td input {
+    margin-top: 5px !important;
+}
+
+.threeCol td select {
+    margin-top: 5px !important;
+}
+
+.box {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    /*  border:1px solid #d5d5d5; */
+}
+
+.box_head {
+    padding: 0;
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 0 15px 0;
+}
+
+.box_head h3 {
+    display: inline;
+    color: #10546C;
+    line-height: 1;
+    padding: 0 0 0 0;
+    font-size: 20px;
+    /*font-style: bold;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_content {
+    width: 100%;
+    position: relative;
+    padding: 0 0 0;
+    display: inline-block;
+}
+
+.box_content.space {
+    padding: 15px;
+}
+
+.box_content h2 {
+    color: #666;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.box_content h3 {
+    color: #666;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.box_content h4 {
+    color: #666;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.box_content h5 {
+    color: #666;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.box_content h6 {
+    color: #666;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.box_content p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 22px;
+    color: #666;
+}
+
+.box_head .button {
+    margin: 0;
+}
+
+.box .toggles {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.toggles {
+    cursor: pointer;
+    background: #E1E1E1 url(/images/plusminus.png) no-repeat center -23px;
+    padding: 12px 15px;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #7a7a7a;
+    margin: 0;
+    cursor: pointer;
+}
+
+.toggles.active {
+    background: #E1E1E1 url(/images/plusminus.png) no-repeat center 7px;
+}
+
+/* sub-menu */
+
+.cbp-hrmenu .cbp-hrsub {
+    display: none;
+    position: absolute;
+    background: #EFEFEE;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    top: 100%;
+    -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px #ddd;
+    border-top: 1px solid #dfdddd;
+    border-bottom: 1px solid #dfdddd;
+    padding: 15px 0 5px;
+}
+
+.cbp-hropen .cbp-hrsub {
+    display: block;
+}
+
+.cbp-hropen .cbp-hrsub .fixedWrap {
+    padding: 0 20px;
+}
+
+.colGroups {
+    width: 100%;
+    position: relative;
+    margin: 0 0 15px 0;
+    display: inline-block;
+}
+
+.colGroups .colLeft {
+    width: 20%;
+    display: table-cell;
+    border: 1px solid #d5d5d5;
+    vertical-align: top;
+}
+
+.colGroups .colMid {
+    width: 58%;
+    display: table-cell;
+    vertical-align: top;
+    border: 1px solid #d5d5d5;
+    padding: 0 0;
+}
+
+.colGroups .colRight {
+    width: 22%;
+    background: #f0efee;
+    display: table-cell;
+    border: 1px solid #d5d5d5;
+    vertical-align: top;
+}
+
+.colGroups .space {
+    width: 1%;
+}
+
+.photothumb {
+    width: 100%;
+    position: relative;
+}
+
+.photothumb img {
+    width: 100%;
+    display: block;
+}
+
+.photothumb .zoom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(images/zoom.png) no-repeat;
+    width: 71px;
+    height: 71px;
+}
+
+.ratingWrap {
+    display: inline-block;
+}
+
+.colGroups .colLeft .ratingWrap {
+    display: table;
+    margin: 15px auto 0;
+}
+
+.dealtitle {
+    border-bottom: 1px solid #dedede;
+    padding: 10px 15px;
+    margin: 0 0 0;
+}
+
+.dealtitle h2 {
+    font-size: 20px;
+    color: #333;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-family: 'OpenSans-Semibold';
+}
+
+.dealtitle h5 {
+    font-size: 16px;
+    color: #464646;
+    font-family: 'OpenSans-Light';
+    margin: 0;
+}
+
+.descList {
+    width: 100%;
+    display: inline-block;
+}
+
+.descList li {
+    padding: 0 0 15px 0;
+    display: block;
+}
+
+.descList li:last-child {
+    padding-bottom: 0;
+}
+
+.descList li .captions {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #4b4b4b;
+    font-family: 'OpenSans-Semibold';
+}
+
+.descList li .value {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #4b4b4b;
+}
+
+.colGroups .descList {
+    padding: 15px;
+}
+
+.verticalNav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.verticalNav li {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0;
+    padding: 0;
+}
+
+.verticalNav li:last-child {
+    border-bottom: none;
+}
+
+.verticalNav li a {
+    padding: 10px;
+    background: #f0efee;
+    border-left: 3px solid #f0efee;
+    display: block;
+    font-size: 13px;
+    color: #737373;
+    position: relative;
+}
+
+.verticalNav li a:hover {
+    background: #fff;
+    color: #c31422;
+    padding-left: 15px;
+    border-left: 3px solid #c31422;
+}
+
+/*.verticalNav li a:before{ display:none; position:absolute; top:8px; left:-3px; z-index:999; content:""; border-bottom:10px solid transparent;border-top:10px solid transparent;border-left:10px solid #c31422;} .verticalNav li:hover a:before{display:block;}*/
+
+.redtxt {
+    color: #F00;
+}
+
+.yellowtxt {
+    color: #ff9000;
+}
+
+.verticalNav .openWrap {
+    padding: 10px 15px 15px;
+    display: none;
+    position: absolute;
+    right: 20%;
+    width: 500px;
+    bottom: -1px;
+    top: -1px;
+    z-index: 99;
+    background: #FFF;
+    overflow: auto;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 1px 15px #b7b7b7;
+    -moz-box-shadow: 0 1px 15px #b7b7b7;
+    box-shadow: 0 1px 15px #b7b7b7;
+}
+
+.verticalNav li .openWrap p {
+    padding: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.verticalNav li:hover .openWrap {
+    display: block;
+}
+
+.verticalNav li:hover a {
+    background: #fff;
+    color: #c31422;
+    border-left: 3px solid #c31422;
+}
+
+.verticalNav .openWrap h6 {
+    font-size: 20px;
+    color: #333;
+    line-height: 1;
+    padding: 0 0 15px 0;
+}
+
+#footer {
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    margin: 0 0 0 0;
+    background: #252525;
+    padding: 15px 0;
+}
+
+#footer p {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 10px 0 10px;
+}
+
+#footer p a {
+    color: #fff;
+    font-family: 'OpenSans-Semibold';
+}
+
+.dataTable {
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    border-spacing: 0;
+}
+
+.dataTable th {
+    border-bottom: 1px solid #D5D5D5;
+    font-size: 13px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #333;
+    text-align: left;
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
+
+.dataTable .button {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.dataTable td {
+    border-spacing: 0;
+    vertical-align: top;
+    padding: 10px;
+    color: #666;
+    font-size: 13px;
+}
+
+.dataTable tr:nth-child(even) td {
+    background: #f1f1f1;
+}
+
+/* .dataTable{width:100%;border-bottom:1px solid #D5D5D5; border-spacing:0;} .dataTable th{ font-size:13px;padding:10px;font-family: 'OpenSans-Semibold'; font-weight:normal; color:#333; text-align:left; border-right: 1px solid #D5D5D5;border-bottom:2px solid #D5D5D5;border-top:1px solid #D5D5D5; } .dataTable th:first-child{border-left:1px solid #D5D5D5; } .dataTable tr:last-of-type td{ border-bottom: none;} .dataTable .button{ margin-bottom:0; margin-top:0;} .dataTable td{ border-spacing:0; vertical-align:top;padding:10px;color:#666; font-size:13px; border-left: 1px solid #FFFFFF; border-right: 1px solid #D5D5D5;border-bottom: 1px solid #D5D5D5;} .dataTable td:first-child{border-left:1px solid #D5D5D5;}  */
+
+.results {
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.results span {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #E0E0E0;
+    color: #4A4A4A;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 1%;
+    margin: 0;
+    padding: 4px 12px;
+}
+
+.sticky {
+    /* position: fixed; */
+    top: 0;
+    animation: thedrop 1s 1;
+    -moz-animation: thedrop 1s 1;
+    -webkit-animation: thedrop 1s 1;
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    *display: inline;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.pagination li:last-child {
+    margin-right: 0;
+}
+
+.pagination li a {
+    border: 1px solid #D5D5D5;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #333333;
+    background: #ffffff;
+}
+
+.pagination li a:hover {
+    background: #f2f2f1;
+    border: 1px solid #dfdcdc;
+    box-shadow: none;
+}
+
+.pagination li.selected a {
+    border: 1px solid #069c43;
+    background: #069c43;
+    color: #FFFFFF;
+}
+
+.pagination li:first-child a:hover {
+    background: #f2f2f1;
+    border: 1px solid #dfdcdc;
+    box-shadow: none;
+}
+
+.pagination li:last-child a:hover {
+    background: #f2f2f1;
+    border: 1px solid #dfdcdc;
+    box-shadow: none;
+}
+
+.fullWrap {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.fullWrap ul.pagination {
+    float: right;
+}
+
+.iconLinks {
+    width: 100%;
+}
+
+.iconLinks li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.iconLinks li a {
+    font-size: 13px;
+    color: #666666;
+    padding: 3px 12px 3px 8px;
+    border-radius: 2px;
+    display: block;
+}
+
+.iconLinks li a:hover {
+    background: #c31422;
+    color: #FFF;
+}
+
+.colGroups .colMid .iconLinks {
+    display: inline-block;
+    border-top: 1px solid #d5d5d5;
+    padding: 10px 10px 8px;
+}
+
+.iconhtml {
+    background: url(images/icon_html.png) no-repeat top;
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconhtml {
+    background-position: 0 -22px;
+}
+
+.iconpreview {
+    background: url(images/icon_preview.png) no-repeat top;
+    width: 12px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconpreview {
+    background-position: 0 -21px;
+}
+
+.iconedit {
+    background: url(images/icon_edit.png) no-repeat top;
+    width: 13px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconedit {
+    background-position: 0 -21px;
+}
+
+.iconcancel {
+    background: url(images/icon_cancel.png) no-repeat top;
+    width: 12px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconcancel {
+    background-position: 0 -21px;
+}
+
+.iconrejected {
+    background: url(images/icon_reject.png) no-repeat top;
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconrejected {
+    background-position: 0 -21px;
+}
+
+.iconselect {
+    background: url(images/icon_select.png) no-repeat top;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconLinks li a:hover .iconselect {
+    background-position: 0 -21px;
+}
+
+.delete {
+    font-size: 11px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #c31422;
+    border: 1px solid #990000;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+}
+
+.delete:hover {
+    background: #b20d1a;
+    color: #FFFFFF;
+}
+
+.edit {
+    font-size: 11px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #EBEBEB;
+    border: 1px solid #C4C4C4;
+    color: #757575;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+}
+
+.edit:hover {
+    background: #e0e0e0;
+    color: #757575;
+}
+
+.view {
+    font-size: 11px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #737373;
+    border: 1px solid #595959;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+}
+
+.view:hover {
+    background: #696868;
+    color: #FFFFFF;
+}
+
+/* ======================================================== Progress bars ===================================================== */
+
+.progress {
+    margin: 0 0 15px 0;
+    height: 20px;
+    background: #ebebeb;
+    border-radius: 10px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.progress:last-child {
+    margin-bottom: 0;
+}
+
+.progress>span {
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    min-width: 30px;
+    height: 18px;
+    line-height: 16px;
+    text-align: right;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bfbfbf #b3b3b3 #9e9e9e;
+    background-color: #cccccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(70%, #dbdbdb), color-stop(100%, #cccccc));
+    background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+    background-image: -moz-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+    background-image: -ms-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+    background-image: -o-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+    background-image: linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress>span span {
+    padding: 0 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #404040;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.progress>span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 18px;
+    border-radius: 10px;
+    background: url(images/progress.png) 0 0 repeat-x;
+}
+
+.progress .green {
+    border-color: #78b337 #6ba031 #568128;
+    background-color: #85c440;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b7dc8e), color-stop(70%, #99ce5f), color-stop(100%, #85c440));
+    background-image: -webkit-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+    background-image: -moz-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+    background-image: -ms-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+    background-image: -o-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+    background-image: linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+}
+
+.progress .red {
+    border-color: #c73321 #b12d1e #8e2418;
+    background-color: #db3a27;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ea8a7e), color-stop(70%, #e15a4a), color-stop(100%, #db3a27));
+    background-image: -webkit-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+    background-image: -moz-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+    background-image: -ms-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+    background-image: -o-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+    background-image: linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+}
+
+.progress .orange {
+    border-color: #f0ad24 #eba310 #c5880d;
+    background-color: #f2b63c;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8da9c), color-stop(70%, #f5c462), color-stop(100%, #f2b63c));
+    background-image: -webkit-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+    background-image: -moz-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+    background-image: -ms-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+    background-image: -o-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+    background-image: linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+}
+
+.progress .blue {
+    border-color: #459fd6 #3094d2 #277db2;
+    background-color: #5aaadb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aed5ed), color-stop(70%, #7bbbe2), color-stop(100%, #5aaadb));
+    background-image: -webkit-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+    background-image: -moz-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+    background-image: -ms-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+    background-image: -o-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+    background-image: linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+}
+
+.notification {
+    line-height: 30px;
+    cursor: pointer;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    margin: 8px 0px 8px 0px;
+    padding: 20px 25px 20px 60px;
+    border-radius: 2px;
+}
+
+.notification strong {
+    margin-right: 5px;
+}
+
+.notification p {
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+    color: #333333;
+}
+
+.message p {
+    font-size: 13px;
+}
+
+.warning {
+    background-image: url(images/error.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #FFC237;
+    background-color: #FFEAA8;
+    color: #826200;
+}
+
+.success {
+    background-image: url(images/accept.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #99C600;
+    background-color: #EFFFB9;
+    color: #3C5A01;
+}
+
+.failure {
+    background-image: url(images/exclamation.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #EB5339;
+    background-color: #FCCAC2;
+    color: #AC260F;
+}
+
+.information {
+    background-image: url(images/information.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #418ACC;
+    background-color: #D0E4F4;
+    color: #235685;
+}
+
+.messages {
+    background-image: url(images/email.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #42B4FF;
+    background-color: #9DDFFF;
+    color: #835F21;
+}
+
+.leftbox {
+    width: 49.4%;
+    float: left;
+}
+
+.leftbox .box {
+    min-height: 650px;
+}
+
+.rightbox {
+    width: 49.4%;
+    float: right;
+}
+
+.rightbox .box {
+    min-height: 650px;
+}
+
+/* tooltip */
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+.tooltip span {
+    visibility: hidden;
+    position: absolute;
+    bottom: 35px;
+    left: -8px;
+    z-index: 999;
+    padding: 4px 10px;
+    color: #FFFFFF;
+    background-color: #252525;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.tooltip:hover {
+    border: 0;
+    /* IE6 fix */
+}
+
+.tooltip:hover span {
+    visibility: visible;
+}
+
+.tooltip span:before, .tooltip span:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -8px;
+    border-top: 6px solid #252525;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 0;
+}
+
+.tooltip span:before {
+    border-top-color: #252525;
+    bottom: -5px;
+}
+
+.descvertical {
+    width: 100%;
+    display: inline-block;
+}
+
+.descvertical li {
+    padding: 0 0 10px 0;
+    display: block;
+}
+
+.descvertical li:last-child {
+    padding-bottom: 0;
+}
+
+.descvertical li .captions {
+    display: block;
+    font-size: 13px;
+    color: #4b4b4b;
+    font-family: 'OpenSans-Semibold';
+}
+
+.descvertical li .value {
+    display: block;
+    font-size: 13px;
+    color: #4b4b4b;
+}
+
+.iconbtns {
+    width: 100%;
+}
+
+.iconbtns li {
+    position: relative;
+    float: left;
+    margin: 0 5px 5px 5px;
+}
+
+.iconbtns li a {
+    background: #555555;
+    display: block;
+    height: 24px;
+    width: 26px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.iconbtns li a:hover {
+    background: #165B74;
+}
+
+.pencil_icon {
+    width: 14px;
+}
+
+.password_icon {
+    width: 15px;
+}
+
+.delete_icon {
+    width: 12px;
+}
+
+.view_icon {
+    width: 16px;
+    margin-top: 6px !important;
+}
+
+.transhistory_icon {
+    width: 16px;
+}
+
+.list_icon {
+    width: 16px;
+}
+
+.earnings_icon {
+    width: 16px;
+}
+
+/* .iconbtns li a .whiteicon{margin:4px 0 0 0;} .inactive_icon{width:11px;} .inactive_icon{width:10px; margin-left:1px !important;margin-top:4px !important;} .active_icon{width:16px; margin-left:1px !important;margin-top:4px !important;}*/
+
+/* Used for the Switch effect: */
+
+.cb-enable {
+    border: 1px solid #d5d5d5;
+    float: left;
+    border-radius: 2px 0 0 2px;
+    padding: 5px 10px 6px;
+}
+
+.cb-disable {
+    border: 1px solid #d5d5d5;
+    float: left;
+    border-radius: 0 2px 2px 0;
+    padding: 5px 10px 6px;
+}
+
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span {
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.cb-disable.selected {
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    color: #333;
+}
+
+.cb-enable.selected {
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    color: #333;
+}
+
+.switch label {
+    cursor: pointer;
+}
+
+.blocklevel {
+    display: block !important;
+    text-align: center;
+}
+
+.toggleswitch {
+    background: url(/images/active_inactive.png) no-repeat top;
+    width: 26px;
+    height: 24px;
+    display: inline-block;
+}
+
+.toggleswitch.actives {
+    background: url(/images/active_inactive.png) no-repeat 0 -24px;
+}
+
+.tabcontainer {
+    width: 100%;
+}
+
+.tabcontainer .normalTabs {
+    height: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.tabcontainer .normalTabs li {
+    float: left;
+    margin: 0 -1px 0 0;
+}
+
+.tabcontainer .normalTabs li a {
+    background: #ededed;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #737373;
+    font-family: 'OpenSans-Light';
+    display: block;
+    border: 1px solid #d8d8d8;
+}
+
+.tabcontainer .normalTabs li.active a {
+    background: #FFF;
+    color: #c31422;
+    border-bottom: 1px solid #fff;
+}
+
+.tabcontainer .contentcontainer {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+.sectionborder {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+}
+
+.floatedchecks {
+    width: 100%;
+    display: inline-block;
+}
+
+.floatedchecks li {
+    float: left;
+    margin: 0 30px 10px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.formTable small {
+    font-size: 12px;
+    font-style: italic;
+    color: #999;
+}
+
+.logobox {
+    display: inline-block;
+}
+
+.logoWrap {
+    display: inline-block;
+    margin: 10px 0 5px 0;
+    position: relative;
+}
+
+.logothumb {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #D8D8D8;
+    padding: 0 20px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background: #F2F2F2;
+}
+
+.logothumb .deleteLink {
+    background: #666 url(images/cross.png) no-repeat center 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.logothumb.blackclr {
+    background: #252525;
+    border: 1px solid #fff;
+}
+
+.logothumb .deleteLink.white {
+    background: #fff url(images/cross.png) no-repeat center -25px;
+}
+
+.logobox .bottom {
+    display: inline-block;
+}
+
+.logobox .bottom input[type="file"] {
+    float: left;
+    margin-top: 0 !important;
+}
+
+.logobox .bottom .iconbtns {
+    float: right;
+    display: inline-block;
+    width: auto;
+}
+
+.calenderfield {
+    background: #fff url(images/cal_icon.png) no-repeat 96% 6px !important;
+}
+
+.fullrow {
+    margin: 0 0 0 -1%;
+}
+
+.fullrow:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.borderBox {
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    width: 24%;
+    float: left;
+    margin: 0 0 0 1%;
+    display: table;
+    vertical-align: top;
+    background: rgb(252, 252, 252);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 1)), color-stop(100%, rgba(238, 238, 238, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
+    /* IE6-9 */
+}
+
+.borderBox:before {
+    width: 40%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    border-radius: 3px 0 0 3px;
+}
+
+.borderBox .grid_1 {
+    padding: 15px;
+    position: relative;
+    width: 40%;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.borderBox .grid_1 .innerbox {
+    height: 140px;
+    display: table-cell;
+}
+
+.borderBox .grid_2 {
+    padding: 15px;
+    width: 60%;
+    display: table-cell;
+    height: 150px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.borderBox .grid_2 h3 {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0 0 0 0;
+    font-family: ;
+}
+
+.borderBox .grid_2 h3 span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9a9a9a;
+    line-height: 1;
+    padding: 10px 0 0 0;
+}
+
+.borderBox.greenbox:before {
+    background: #7fc241;
+}
+
+.borderBox.greenbox .grid_2 h3 {
+    color: #7fc241;
+}
+
+.borderBox.orgbox:before {
+    background: #f14130;
+}
+
+.borderBox.orgbox .grid_2 h3 {
+    color: #f14130;
+}
+
+.borderBox.yellowbox:before {
+    background: #f8d347;
+}
+
+.borderBox.yellowbox .grid_2 h3 {
+    color: #eac32e;
+}
+
+.borderBox.bluebox:before {
+    background: #0f8bbf;
+}
+
+.borderBox.bluebox .grid_2 h3 {
+    color: #0f8bbf;
+}
+
+#frm_mbs_id_frmLogin table td br {
+    display: none;
+}
+
+#frm_mbs_id_frmForgotPassword table td br {
+    display: none;
+}
+
+.paginationwrap {
+    margin: 15px 0 0 0;
+}
+
+.paginationwrap .pagination {
+    float: right;
+    display: inline-block;
+}
+
+.textred {
+    color: #ff0000;
+    font-family: 'OpenSans-Semibold';
+}
+
+.textyellow {
+    color: #E29B04;
+    font-family: 'OpenSans-Semibold';
+}
+
+.textgreen {
+    color: #A1B900;
+    font-family: 'OpenSans-Semibold';
+}
+
+.colTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: 1px solid #D5D5D5;
+}
+
+.colTable th {
+    font-size: 13px;
+    padding: 10px;
+    font-family: 'OpenSans-Semibold';
+    font-weight: normal;
+    color: #333;
+    text-align: left;
+    border: 1px solid #D5D5D5;
+}
+
+.colTable td {
+    border-spacing: 0;
+    vertical-align: top;
+    padding: 10px;
+    color: #666;
+    font-size: 13px;
+    border: 1px solid #D5D5D5;
+}
+
+.colTable td:first-child {
+    font-family: 'OpenSans-Bold';
+}
+
+#frm_mbs_id_frmcontent input[type="text"], #frm_mbs_id_frmcontent select {
+    width: 300px;
+}
+
+#frm_mbs_id_frmcontent td:first-child {
+    width: 15%;
+}
+
+#frm_mbs_id_frmEmailTemplates input[type="text"], #frm_mbs_id_frmcontent select {
+    width: 300px;
+}
+
+#frm_mbs_id_frmEmailTemplates td:first-child {
+    width: 15%;
+}
+
+#frm_mbs_id_frmPassword input[type="text"], #frm_mbs_id_frmPassword input[type="password"], #frm_mbs_id_frmPassword select {
+    width: 400px;
+}
+
+#frm_mbs_id_frmPassword td:first-child {
+    width: 15%;
+}
+
+#idAreaoEdit_mbs_auto_id_tpl_body td:first-child {
+    width: auto;
+}
+
+/******** star rating *******/
+
+.ratingsWrap {
+    display: table;
+}
+
+.ratingsWrap span {
+    display: block;
+    background: url(/images/star-rating.png) no-repeat;
+    height: 15px;
+    width: 105px;
+}
+
+.ratingsWrap span.p10 {
+    background-position: 0 0px;
+}
+
+.ratingsWrap span.p9 {
+    background-position: 0 -16px;
+}
+
+.ratingsWrap span.p8 {
+    background-position: 0 -32px;
+}
+
+.ratingsWrap span.p7 {
+    background-position: 0 -48px;
+}
+
+.ratingsWrap span.p6 {
+    background-position: 0 -64px;
+}
+
+.ratingsWrap span.p5 {
+    background-position: 0 -80px;
+}
+
+.ratingsWrap span.p4 {
+    background-position: 0 -96px;
+}
+
+.ratingsWrap span.p3 {
+    background-position: 0 -112px;
+}
+
+.ratingsWrap span.p2 {
+    background-position: 0 -128px;
+}
+
+.ratingsWrap span.p1 {
+    background-position: 0 -144px;
+}
+
+.ratingsWrap span.p0 {
+    background-position: 0 -161px;
+}
+
+.div_msg {
+    line-height: 30px;
+    cursor: pointer;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    /* margin: 15px 0 ; */
+    padding: 20px 25px 20px 60px;
+    border-radius: 2px;
+    background-image: url(/images/accept.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #99C600;
+    background-color: #efffb9;
+}
+
+.div_msg strong {
+    margin-right: 5px;
+}
+
+.div_msg p {
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+    color: #333333;
+}
+
+.div_msg p {
+    font-size: 13px;
+}
+
+.div_error {
+    line-height: 30px;
+    cursor: pointer;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0;
+    padding: 20px 25px 20px 60px;
+    border-radius: 2px;
+    background-image: url(/images/exclamation.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border: 1px solid #EB5339;
+    background-color: #FCCAC2;
+    color: #AC260F;
+}
+
+.div_error strong {
+    margin-right: 5px;
+}
+
+.div_error p {
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+    color: #333333;
+}
+
+.div_error p {
+    font-size: 13px;
+}
+
+/* view history page */
+
+.togglehead {
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+    width: 100%;
+    float: left;
+    margin: -1px 0 0 0;
+}
+
+.togglehead:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.togglehead .floatedList {
+    float: right;
+    margin: 1px 0 0 0;
+}
+
+.togglehead .grid_1 {
+    float: left;
+    font-size: 16px;
+    color: #505050;
+    font-weight: 600;
+}
+
+.togglehead .grid_1 span {
+    font-size: 16px;
+    color: #505050;
+    font-weight: normal;
+}
+
+.togglecontent {
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: -1px 0 0 0;
+}
+
+.floatedList li {
+    position: relative;
+    float: left;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 0 20px;
+}
+
+.floatedList li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.floatedList li:first-child:before {
+    display: none;
+}
+
+.floatedList li:before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 14px;
+    width: 1px;
+    content: "";
+    background: #333;
+}
+
+.errorlist, .errorlist li a {
+    color: #FF0000;
+    font-family: 'OpenSans-Semibold';
+}
+
+.errorlist li a {
+    margin: 3px 0;
+}
+
+/* 2-june-2014 */
+
+.convers p {
+    background: url(/images/quote-1.png) no-repeat scroll 0 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    padding: 0px 0 0px 30px;
+    position: relative;
+    text-align: left;
+}
+
+.convers p:after {
+    background: url(/images/quote-2.png) no-repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin: 0px 0 0 10px;
+    position: absolute;
+    width: 20px;
+}
+
+.convers .right {
+    float: left!important;
+    padding: 0 0 0 30px;
+    margin: 15px 0 0 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.convers .right h4 {
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    color: #165B74;
+}
+
+.iconbtns_admin {
+    background: none repeat scroll 0 0 #555555;
+    border-radius: 3px;
+    display: inline-block;
+    height: 24px;
+    text-align: center;
+    width: 26px;
+    margin-right: 5px;
+}
+
+.dataTable h6 {
+    font-size: 14px;
+}
+
+.spn_must_field {
+    color: red;
+}
+
+.sectionfull {
+    width: 100%;
+    display: inline-block;
+}
+
+.sectionfull .sectionLeft {
+    width: 65%;
+    float: left;
+}
+
+.sectionfull .sectionRight {
+    width: 34%;
+    float: right;
+}
+
+.photobox {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.photobox>a {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.photobox img {
+    width: 100%;
+    display: block;
+}
+
+.section_threeCols {
+    width: 100%;
+    display: inline-block;
+}
+
+.section_threeCols h3 {
+    font-size: 20px;
+    line-height: normal;
+    padding: 0 0 10px 0;
+    color: #165b74;
+}
+
+.section_threeCols .col {
+    width: 24.2%;
+    float: left;
+    margin: 0 0 0 1%;
+    border: 1px solid #cbcbcb;
+    border-bottom: 2px solid #cbcbcb;
+    padding: 20px 30px 10px;
+    text-align: center;
+    border-radius: 3px;
+    background: #fffcfc;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fffcfc 0%, #f5f9f0 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffcfc), color-stop(100%, #f5f9f0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fffcfc 0%, #f5f9f0 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fffcfc 0%, #f5f9f0 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fffcfc 0%, #f5f9f0 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fffcfc 0%, #f5f9f0 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcfc', endColorstr='#f5f9f0', GradientType=0);
+    /* IE6-9 */
+}
+
+.section_threeCols .col:first-child {
+    margin-left: 0;
+}
+
+.section_threeCols .col h5 {
+    font-family: 'OpenSans-Light';
+    line-height: 1;
+    font-size: 26px;
+    color: #333;
+    padding: 0 0 15px 0;
+}
+
+.section_threeCols .col .numcount {
+    display: inline-block;
+    padding: 20px 25px;
+    line-height: 1;
+    background: #069c43;
+    border-radius: 3px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'OpenSans-Bold';
+}
+
+/* @media only screen and (min-width:901px) and (max-width:1400px) { .navigations li a{font-size:12px;padding: 10px 15px;} }*/
+
+.filterbox.box {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #d5d5d5;
+}
+
+.filterbox.box .box_head {
+    padding: 15px;
+    position: relative;
+    margin: 0 0 0 0;
+}
+
+.filterbox.box .box_head h3 {
+    display: inline;
+    color: #10546C;
+    line-height: 1;
+    padding: 0 0 0 0;
+    font-size: 20px;
+}
+
+.filterbox.box .box_content {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    display: inline-block;
+}
+
+.filterbox.box .box_content.space {
+    padding: 15px;
+}
+
+.filterbox.box .box_content h2 {
+    color: #666;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.filterbox.box .box_content h3 {
+    color: #666;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.filterbox.box .box_content h4 {
+    color: #666;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.filterbox.box .box_content h5 {
+    color: #666;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.filterbox.box .box_content h6 {
+    color: #666;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.filterbox.box .box_content p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 22px;
+    color: #666;
+}
+
+.filterbox.box .box_head .button {
+    margin: 0;
+}
+
+.filterbox.box .box .toggles {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.section_threeCols .col .desc_text {
+    min-height: 55px;
+    font-size: 14px;
+    color: #333;
+    padding: 15px 0 0 0;
+}
+
+#frm_mbs_id_frmResetPassword input[type="text"], #frm_mbs_id_frmResetPassword input[type="password"], #frm_mbs_id_frmResetPassword select {
+    width: 400px;
+}
+
+#frm_mbs_id_frmResetPassword td:first-child {
+    width: 15%;
+}
+
+#common_msg {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0px;
+}
+
+#common_msg ul.errorlist {
+    background: #fccac2;
+    font-size: 20px;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#common_msg ul.errorlist:first-child {
+    padding-top: 15px;
+}
+
+#common_msg ul.errorlist:last-child {
+    padding-bottom: 15px;
+}
+
+#common_msg ul.errorlist li {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#common_msg .div_error {
+    background: #fccac2;
+    font-size: 20px;
+    left: 0;
+    padding: 22px 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border: none;
+}
+
+#common_msg .div_error li {
+    text-align: center;
+}
+
+#common_msg .div_msg {
+    background: #efffb9;
+    font-size: 20px;
+    left: 0;
+    padding: 22px 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    color: #3c5a01;
+}
+
+#common_msg .div_msg li {
+    color: #3c5a01;
+}
+
+.green_Txt {
+    color: #31ab46;
+}
+
+.red_Txt {
+    color: #f31b11;
+}
+
+/* 404 error */
+
+.errorWrap {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 70%;
+}
+
+.errorWrap .textwrap {
+    margin: 0 auto 20px;
+    position: relative;
+    border-bottom: 1px solid #d2d8da;
+    padding: 0 0;
+    width: 80%;
+}
+
+.errorWrap .textwrap .errorpic {
+    float: right;
+    margin: 60px 0 0 0;
+}
+
+.errorWrap .textwrap .text {
+    position: relative;
+    display: inline-block;
+}
+
+.errorWrap .textwrap .text span {
+    font-size: 280px;
+    color: #000;
+    line-height: 1;
+}
+
+.errorWrap .textwrap .overtext {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    padding: 10px 15px 10px 0;
+    background: #fff;
+    width: 600px;
+}
+
+.errorWrap .textwrap .overtext h2 {
+    font-weight: bold;
+    float: left;
+    padding: 0;
+    font-size: 80px;
+    color: #ef2e25;
+    line-height: 65px;
+}
+
+.errorWrap .textwrap .overtext h5 {
+    font-size: 25px;
+    color: #333;
+    padding: 0 15px;
+    line-height: 24px;
+    display: inline-block;
+    margin: 6px 0 6px 0;
+}
+
+.errorWrap .textwrap .overtext h5 span {
+    font-size: 30px !important;
+    color: #ef2e25 !important;
+}
+
+.errorWrap .buttonGreen {
+    position: relative;
+}
+
+.popup_msg {
+    padding: 15px 50px;
+    position: relative;
+}
+
+.popup_msg>p {
+    font-weight: 600;
+}
+
+.popup_msg.success {
+    border-radius: 2px;
+}
+
+.popup_msg.success:before {
+    content: "\f120";
+    font-family: "Ionicons";
+    font-size: 23px;
+    left: 15px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 30px;
+    color: #009148;
+}
+
+.popup_msg.failure:before {
+    content: "\f100";
+    font-family: "Ionicons";
+    font-size: 23px;
+    left: 15px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 30px;
+}
+
+.popup_msg.failure {
+    border: none;
+    border-radius: 2px;
+}
+
+.popup_msg.information:before {
+    content: "\f149";
+    font-family: "Ionicons";
+    font-size: 23px;
+    left: 15px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 30px;
+}
+
+.popup_msg.information {
+    border: none;
+    border-radius: 2px;
+}
+
+.photosquare {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin: 10px 10px 0 0;
+    position: relative;
+}
+
+.photosquare a.crossLink {
+    background: url("/images/white_close.png") no-repeat scroll center center #f00;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.photosquare .linkset.button.small {
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 1px;
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.sub-categories {
+    padding: 10px;
+}
+
+.Categories {
+    padding: 10px !important;
+}
+
+.div_error {
+    margin: 0px;
+}
+
+#frmPost .formTable #image_div a#add_more_field {
+    margin: 0px 0 0 5px;
+    padding: 4px 10px;
+    vertical-align: middle;
+}
+
+/*-----edit 10-07-2015------*/
+
+.action_btn {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.action_btn a.button {
+    display: inline;
+    padding: 3px 7px;
+}
+
+.search_filter {
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 100%, #ededed 47%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f6f6f6), color-stop(47%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 100%, #ededed 47%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%, #ededed 47%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 100%, #ededed 47%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%, #ededed 47%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    border: 1px solid #e3e3e3;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.search_filter .siteForm input[type="text"], .search_filter .siteForm select {
+    border-color: #e3e3e3;
+}
+
+.search_filter .threeCol td br {
+    display: none;
+}
+
+.search_filter .threeCol td input, .search_filter .threeCol td select {
+    margin-top: 0px !important;
+}
+
+.search_filter .siteForm input[type="button"] {
+    background: #7b7b7b;
+    color: #fff;
+    padding-top: 6px;
+}
+
+.search_filter .siteForm input[type="button"]:hover {
+    background: #000;
+}
+
+.box_content .setting-form-wrapper {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.box_content .setting-form-wrapper .settings_form {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.box_content .setting-form-wrapper h2 {
+    font-size: 20px;
+    line-height: 1;
+    padding: 0;
+    color: #10546c;
+}
+
+.setting-form-wrapper .formTable input[type="text"], .setting-form-wrapper .formTable select, .setting-form-wrapper .formTable textarea {
+    border-color: #e3e3e3;
+    max-width: 500px;
+}
+
+.setting-form-wrapper td:first-child {
+    padding-right: 20px;
+    text-align: right;
+    width: 30%;
+}
+
+.rightPanel .title h2 span.task_refid {
+    background: #009148;
+    position: relative;
+    border-radius: 3px;
+    font-size: 19px;
+    color: #fff;
+    padding: 2px 5px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.rightPanel .title h2 span.task_refid:before {
+    border: 7px solid transparent;
+    border-right-color: #009148;
+    position: absolute;
+    right: 100%;
+    top: 8px;
+    content: "";
+}
+
+/*----14-07-2015--*/
+
+#frm_mbs_id_frmcontent table table td:first-child {
+    width: auto;
+}
+
+/*---03-08-2015----*/
+
+#frm_mbs_id_frmSort .paginationwrap {
+    float: right;
+    margin: 0px;
+}
+
+#frm_mbs_id_frmSort table {
+    margin-bottom: 20px;
+}
+
+#frm_mbs_id_frmSort input[type="submit"] {
+    padding: 5px 25px;
+}

@@ -51,7 +51,7 @@
 			<section class="navs">
 				<div id="cbp-hrmenu" class="navWrap cbp-hrmenu">
 					<ul class="navigations">
-						<li class="current"><a href="/xampp/htdocs/paper weight/index.html" ><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_home.png" alt="">Dashboard</a></li>
+						<li ><a href="/xampp/htdocs/paper weight/index.html" ><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_home.png" alt="">Dashboard</a></li>
 						<li >
 							<a href="/xampp/htdocs/paper weight/files/manager/orders.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_deals.png" alt="">Orders</a>
 							<div class="cbp-hrsub">
@@ -95,7 +95,7 @@
 							<a href="/xampp/htdocs/paper weight/files/user/user-listing.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_users.png" alt="">Users</a>
 						</li>
 
-						<li >
+						<li  class="current">
 							<a href="javascript:void(0);"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_cms.png" alt="">CMS</a>
 							<div class="cbp-hrsub">
 								<div class="fixedWrap">
@@ -146,17 +146,74 @@
 
 		</header>
 		<div id="body">
-<section class="rightPanel wide">
-	<div class="title"><h2>Blog Comments</h2></div>
-	<section class="box search_filter">
-		<div class="box_head"><h3></h3></div>
+<!--leftPanel start here-->    
+<section class="leftPanel">
+	<ul class="leftNavs">
+		<li><a href="/xampp/htdocs/paper weight/files/manager/contentpages.html">Manage Content Pages</a></li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/cmsblock.html">Manage Page Blocks</a></li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/emailtemplate.html">Email Template</a></li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/contentpages/service-tag.html">Manage Infotips</a></li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/faq.html">Manage FAQ's</a></li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/howitworks.html">Manage How It Works Steps</a></li>
+</section>
+<!--leftPanel end here--> <section class="rightPanel">
+	<ul class="breadcrumb">
+		<li><a href="/xampp/htdocs/paper weight/index.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/home.png" alt=""> </a></li>
+		<li>Content Management System</li>
+		<li>Add/Update Content</li>
+	</ul>
+		<div class="title"><h2>Add/Update Content</h2></div>
+	<section class="box filterbox">
+		<div class="box_head"><h3>Content Form</h3></div>
 		<div class="box_content clearfix toggle_container">
-						<form method="post" action="" name="frmComment" id="frmComment" onsubmit="searchPost(this); return false;" class="siteForm"><table class="formTable threeCol" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td><br><input type="text" name="comment_author_name" id="comment_author_name" value="" placeholder="Search Comment Author Name..." title="" /></td><td><br><select name="comment_status"  title="" id="comment_status" ><option value="">Select Comment Status</option><option value="0" >Pending</option><option value="1" >Approved</option><option value="2" >Deleted</option></select></td><td><br><input type="submit" name="btn_submit" id="btn_submit" title="" value="Search" /><input type="button" name="btn_reset" id="btn_reset"onclick="document.location.href='/manager/blogcomments'" class="btn_reset" style="cursor:pointer; margin-left:10px;" title="" value="Reset" /></td></tr></table><input type="hidden" name="page" value="1"  title="" /></form><script type="text/javascript">//<![CDATA[
-			frmComment_validator_requirements={"comment_author_name":{"required":false},"comment_status":{"required":false},"btn_submit":{"required":false},"btn_reset":{"required":false},"page":{"required":false}};frmComment_validator_formatting={"errordisplay":"afterfield","summaryElementId":""};frmComment_validator=$("#frmComment").validation(frmComment_validator_requirements,frmComment_validator_formatting);
+			<div id="validationsummary_frmcontent"></div><form method="post" action="/manager/contentpages/addupdate" name="frmcontent" id="frm_mbs_id_frmcontent" class="siteForm" width="100%"><table class="formTable full_width_table" width="100%"><tr>
+<td>CMS Page Title<span class="spn_must_field">*</span></td>
+<td><input type="text" name="cmspage_title" value=""  title="CMS Page Title" /></td>
+</tr><tr>
+<td>CMS Page Slug<span class="spn_must_field">*</span></td>
+<td><input type="text" name="cmspage_name" value=""  title="CMS Page Slug" onchange="checkUnique($(this), 'tbl_cms', 'cmspage_name', 'cmspage_id', $('#cmspage_id'), []); " data-mbsunichk="1" /></td>
+</tr><tr>
+<td>Select Parent Navigation</td>
+<td><select name="cmspage_nav_id"  title="Select Parent Navigation" id="cmspage_nav_id" ><option value="">Select Navigation</option><option value="1" >Company</option><option value="2" >Services</option><option value="3" >Quick Links 1</option><option value="4" >Quick Links 2</option></select></td>
+</tr><tr>
+<td colspan="2">Page Content<br><textarea name="cmspage_content" id="mbs_auto_id_cmspage_content"  title="Page Content"></textarea><script type="text/javascript">//<![CDATA[
+			                
+			                    var oEdit_mbs_auto_id_cmspage_content = new InnovaEditor("oEdit_mbs_auto_id_cmspage_content");
+			                    oEdit_mbs_auto_id_cmspage_content.width = "100%";
+oEdit_mbs_auto_id_cmspage_content.height = 150;
+oEdit_mbs_auto_id_cmspage_content.groups = [
+                        ["group1", "", ["Bold", "Italic" , "Underline", "FontDialog", "ForeColor", "TextDialog", "RemoveFormat", "Paragraph"]],
+                        ["group2", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]],
+                        ["group3", "", ["Bullets", "Numbering", "JustifyLeft", "JustifyCenter", "JustifyRight"]],
+                        ["group4", "", ["LinkDialog", "ImageDialog", "YoutubeDialog", "TableDialog", "Emoticons"]],
+                        ["group5", "", ["InternalLink"]],
+                        ];
+oEdit_mbs_auto_id_cmspage_content.fileBrowser = "/innova-lnk/assetmanager/asset.php";
+
+			                oEdit_mbs_auto_id_cmspage_content.REPLACE("mbs_auto_id_cmspage_content");
+			                //]]></script></td>
+</tr><tr>
+<td>Meta Page Title</td>
+<td><input type="text" name="meta_title" value=""  title="Meta Page Title" /></td>
+</tr><tr>
+<td>Meta Keywords</td>
+<td><textarea name="meta_keywords"  title="Meta Keywords"></textarea></td>
+</tr><tr>
+<td>Meta Description</td>
+<td><textarea name="meta_description"  title="Meta Description"></textarea></td>
+</tr><tr>
+<td>Other tags(add custom tags & javascript code)</td>
+<td><textarea name="other_tags"  title="Other tags(add custom tags & javascript code)"></textarea></td>
+</tr><tr>
+<td>CMS Page Status</td>
+<td><select name="cmspage_active"  title="CMS Page Status" id="" ><option value="">Select</option><option value="0" >Inactive</option><option value="1" >Active</option></select></td>
+</tr><tr>
+<td></td>
+<td><input type="submit" name="btn_submit" title="" value="Submit" /></td>
+</tr></table><input type="hidden" name="cmspage_id" value=""  title="" /></form><script type="text/javascript">//<![CDATA[
+			frmcontent_validator_requirements={"cmspage_id":{"required":false},"cmspage_title":{"required":true},"cmspage_name":{"required":true},"cmspage_nav_id":{"required":false},"cmspage_content":{"required":false},"meta_title":{"required":false},"meta_keywords":{"required":false},"meta_description":{"required":false},"other_tags":{"required":false},"cmspage_active":{"required":false},"btn_submit":{"required":false}};frmcontent_validator_formatting={"errordisplay":"summary","summaryElementId":"validationsummary_frmcontent"};frmcontent_validator=$("#frm_mbs_id_frmcontent").validation(frmcontent_validator_requirements,frmcontent_validator_formatting);
 			//]]></script>		</div>
 	</section>
-	<section class="box" id="comment-list"></section>
 </section>
 	</div>
 		<!--body end here-->
@@ -167,7 +224,7 @@
 		<!--footer start here-->
 		<footer id="footer">
 			<p class="left">Note: All the times are according to server time. Current server time is
-			   Tuesday Jun 30, 2020, 16:18		   </p>
+			   Wednesday Jul 01, 2020, 02:04		   </p>
 		</footer>
 		<!--footer end here-->
 

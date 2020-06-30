@@ -4,14 +4,14 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>PaperWeight</title>
-<link rel="stylesheet" type="text/css" href="/xampp/htdocs/paper weight/files/manager/blogposts.css" />
+<link rel="stylesheet" type="text/css" href="/xampp/htdocs/paper weight/style.css" />
 <script type="text/javascript">
 	    	var webroot="/";
 	    	var userwebroot = "/manager/";
 	    	var url_rewriting_enabled = 1;
 	    	</script>
-<script type="text/javascript" language="javascript" src="/xampp/htdocs/paper weight/scripts/index.js"></script>
-<script type="text/javascript" language="javascript" src="/xampp/htdocs/paper weight/scripts/action.js"></script>
+<script type="text/javascript" language="javascript" src="/public/manager/index.php?url=jscss/js&f=..%2Fjs%2Fjquery-1.10.2.js%2Cjs%2Fjconfirmaction.jquery.js%2Cjs%2Frespond.min.js%2C..%2Ffacebox%2Ffacebox.js%2Cjs%2Fwaypoints.min.js%2Cjs%2Fmodernizr-1.7.min.js%2C..%2Fjs%2Fjquery.tablednd_0_5.js%2C..%2Fjs%2Fmbsmessage.js%2C..%2Fjs%2Fcalendar.js%2C..%2Fjs%2Fcalendar-setup.js%2C..%2Fjs%2Fcalendar-en.js%2C..%2Fjs%2Fadmin%2Fjquery.jeditable.mini.js%2Cfunctions.js.php%2Cjs%2Fsite-functions.js%2Cform-validation.js.php%2C..%2Ftinymce%2Fjquery.tinymce.min.js%2Cjs%2Ffunction.js&min=1&sid=1557784296"></script>
+<script type="text/javascript" language="javascript" src="/public/manager/index.php?url=pagejsandcss/js/home/default_action&sid=1557935822"></script>
 
 		<link rel="shortcut icon" href="/xampp/htdocs/paper weight/assets/imagesicons/faviconpng65png.png">
 		<link rel="apple-touch-icon image_src" href="/xampp/htdocs/paper weight/assets/imagesicons/faviconpng65png.png">
@@ -38,8 +38,8 @@
 							<div class="dropWrapper">
 								<div class="inner">
 									<ul class="dropLinks">
-										<li><a href="/xampp/htdocs/paper weight/files/manager/configurations.html">My Account</a></li>
-										<li><a href="/xampp/htdocs/paper weight/login.html">Logout</a></li>
+										<li><a href="/manager/configurations">My Account</a></li>
+										<li><a href="/manager/admin/logout">Logout</a></li>
 									</ul>
 								</div>
 							</div>
@@ -53,7 +53,7 @@
 					<ul class="navigations">
 						<li class="current"><a href="/xampp/htdocs/paper weight/index.html" ><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_home.png" alt="">Dashboard</a></li>
 						<li >
-							<a href="/xampp/htdocs/paper weight/files/manager/orders.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_deals.png" alt="">Orders</a>
+							<a href="javascript:void(0);"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_deals.png" alt="">Orders</a>
 							<div class="cbp-hrsub">
 								<div class="fixedWrap">
 									<ul>
@@ -101,77 +101,99 @@
 								<div class="fixedWrap">
 									<ul>
 										<!--<li><a href=""></a></li>-->
-										<li><a href="/xampp/htdocs/paper weight/files/manager/contentpages.html">Manage Content Pages</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/cmsblock.html">Manage Page Blocks</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/emailtemplate.html">Email Template</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/contentpages/service-tag.html">Manage Infotips</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/faq.html">Manage FAQ's</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/howitworks.html">Manage How It Works Steps</a></li>
+										<li><a href="/manager/contentpages">Manage Content Pages</a></li>
+										<li><a href="/manager/cmsblock">Manage Page Blocks</a></li>
+										<li><a href="/manager/emailtemplate">Email Template</a></li>
+										<li><a href="/manager/contentpages/service_tag">Manage Infotips</a></li>
+										<li><a href="/manager/faq">Manage FAQ's</a></li>
+										<li><a href="/manager/howitworks">Manage How It Works Steps</a></li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li >
+						<li class="current" >
 							<a href="javascript:void(0);"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_settings.png" alt="">Settings</a>
 							<div class="cbp-hrsub">
 								<div class="fixedWrap">
 									<ul>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/configurations.html">GENERAL SETTINGS</a>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/labels.html">LABELS MANAGEMENT</a></li>
+										<li><a href="/manager/configurations">GENERAL SETTINGS</a>
+										<li><a href="/manager/labels">LABELS MANAGEMENT</a></li>
 										<li><a href="/manager/language">LANGUAGE MANAGEMENT</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/countries.html">MANAGE COUNTRIES</a></li>
+										<li><a href="/manager/countries">MANAGE COUNTRIES</a></li>
 										<!--<li><a href="">MANAGE WORK FIELD</a></li>-->
-										<li><a href="/xampp/htdocs/paper weight/files/manager/disciplines.html">MANAGE DISCIPLINES</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/paper.html">MANAGE PAPER TYPE</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/academic.html">ACADEMIC DEGREES</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/citation.html">MANAGE CITATION STYLE</a></li>
-										<li><a href="/xampp/htdocs/paper weight/files/manager/services.html">MANAGE SERVICES TYPE</a></li>
+										<li><a href="/manager/disciplines">MANAGE DISCIPLINES</a></li>
+										<li><a href="/manager/paper">MANAGE PAPER TYPE</a></li>
+										<li><a href="/manager/academic">ACADEMIC DEGREES</a></li>
+										<li><a href="/manager/citation">MANAGE CITATION STYLE</a></li>
+										<li><a href="/manager/services">MANAGE SERVICES TYPE</a></li>
 										<li><a href="/manager/customhtml">MANAGE CUSTOM HTML</a></li>
 										<li><a href="/manager/meta/listing">MANAGE META TAGS</a></li>
-                                        <li><a href="/xampp/htdocs/paper weight/files/manager/paymentmethods.html">PAYMENT METHODS</a></li>
+                                        <li><a href="/manager/paymentmethods">PAYMENT METHODS</a></li>
 
 									</ul>
 								</div>
 							</div>
 						</li>
 						<li >
-							<a href="/xampp/htdocs/paper weight/files/manager/question.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_reports.png" alt="">GRAMMAR TEST MANAGEMENT</a></li>
+							<a href="/manager/question"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_reports.png" alt="">GRAMMAR TEST MANAGEMENT</a></li>
 
 						<li >
-							<a href="/xampp/htdocs/paper weight/files/manager/admin/password-change-form.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_cp.png" alt="">Change Password</a></li>
+							<a href="/manager/admin/password_change_form"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_cp.png" alt="">Change Password</a></li>
 					</ul>
 
 				</div>
 			</section>
 
+		</header>
+		<div id="body">
+<!--leftPanel start here-->    
+<section class="leftPanel">
+    <ul class="leftNavs">
+        <li><a href="/manager/configurations" class="selected">GENERAL SETTINGS</a></li>							
+        <li><a href="/manager/labels">LABELS MANAGEMENT</a></li>
 
+        <li><a href="/manager/countries">MANAGE COUNTRIES</a></li>
+
+<!--<li><a href="/manager/work">MANAGE WORK FIELD</a></li>-->
+
+        <li><a href="/manager/services">MANAGE SERVICES FIELD</a></li>
+
+        <li><a href="/manager/disciplines">MANAGE DISCIPLINES</a></li>
+
+        <li><a href="/manager/paper">MANAGE PAPER TYPE</a></li>
+
+        <li><a href="/manager/academic">ACADEMIC DEGREES</a></li>
+
+        <li><a href="/manager/citation">MANAGE CITATION STYLE</a></li>
+        <li><a href="/manager/paymentmethods">PAYMENT METHODS</a></li>
+
+    </ul>
+</section>
 <!--leftPanel end here--> <section class="rightPanel">
     <ul class="breadcrumb">
         <li><a href="/xampp/htdocs/paper weight/index.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/home.png" alt=""> </a></li>
-		<li>Change Password</li>
+		<li><a href="/xampp/htdocs/paper weight/files/manager/citation.html">Manage Citation Style</a></li>
+		<li>Add/Update Citation Style</li>
 	</ul>
-		<div class="title"><h2>Change Password</h2></div>
+		<div class="title"><h2>Add/Update Citation Style</h2></div>
 	<section class="box filterbox">
-	
-			
-		<div class="box_content clearfix space">
-			<form method="post" action="/manager/admin/change_password" name="frmPassword" id="frm_mbs_id_frmPassword" class="siteForm"><table class="formTable" width="100%"><tr>
-<td class='firstChild'>Current Password:<span class="spn_must_field">*</span></td>
-<td><input type="password" name="current_password" value=""  title="Current Password:" /></td>
+		<div class="box_head"><h3>Citation Style Form</h3></div>
+		<div class="box_content clearfix toggle_container">
+			<div id="validationsummary_frmCitation"></div><form method="post" action="/manager/citation/setup" name="frmCitation" id="frm_mbs_id_frmCitation" class="siteForm" width="100%"><table class="formTable" width="100%"><tr>
+<td>Citation Style:<span class="spn_must_field">*</span></td>
+<td><input type="text" name="citstyle_name" id="citstyle_name" value=""  title="Citation Style:" onchange="checkUnique($(this), 'tbl_citation_styles', 'citstyle_name', 'citstyle_id', $('#citstyle_id'), []); " data-mbsunichk="1" /></td>
 </tr><tr>
-<td>New Password:<span class="spn_must_field">*</span></td>
-<td><input type="password" name="new_password" value=""  title="New Password:" /></td>
-</tr><tr>
-<td>Confirm New Password:</td>
-<td><input type="password" name="new_password1" value=""  title="Confirm New Password:" /></td>
+<td>Citation Style Status:</td>
+<td><select name="citstyle_active"  title="Citation Style Status:" id="" ><option value="">Select</option><option value="0" >Inactive</option><option value="1" >Active</option></select></td>
 </tr><tr>
 <td></td>
-<td><input type="submit" name="btn_submit"class="inputbuttons" title="" value="Submit" /></td>
-</tr></table></form><script type="text/javascript">//<![CDATA[
-			frmPassword_validator_requirements={"current_password":{"required":true},"new_password":{"required":true},"new_password1":{"required":false,"comparewith":[{"fldname":"new_password","operator":"eq"}]},"btn_submit":{"required":false}};frmPassword_validator_formatting={"errordisplay":"summary","summaryElementId":"common_msg"};frmPassword_validator=$("#frm_mbs_id_frmPassword").validation(frmPassword_validator_requirements,frmPassword_validator_formatting);
+<td><input type="submit" name="btn_submit" title="" value="Submit" /></td>
+</tr></table><input type="hidden" name="citstyle_id" id="citstyle_id" value=""  title="" /></form><script type="text/javascript">//<![CDATA[
+			frmCitation_validator_requirements={"citstyle_id":{"required":false},"citstyle_name":{"required":true},"citstyle_active":{"required":false},"btn_submit":{"required":false}};frmCitation_validator_formatting={"errordisplay":"summary","summaryElementId":"validationsummary_frmCitation"};frmCitation_validator=$("#frm_mbs_id_frmCitation").validation(frmCitation_validator_requirements,frmCitation_validator_formatting);
 			//]]></script>		</div>
 	</section>
-</section>	</div>
+</section>
+	</div>
 		<!--body end here-->
 
 	</div>
@@ -180,7 +202,7 @@
 		<!--footer start here-->
 		<footer id="footer">
 			<p class="left">Note: All the times are according to server time. Current server time is
-			   Tuesday Jun 30, 2020, 22:06		   </p>
+			   Wednesday Jul 01, 2020, 03:35		   </p>
 		</footer>
 		<!--footer end here-->
 

@@ -143,20 +143,105 @@
 
 				</div>
 			</section>
-
 		</header>
 		<div id="body">
+<!--<script language="javascript" type="text/javascript" src="innova/scripts/innovaeditor.js"></script>
+<script src="innova/scripts/common/webfont.js" type="text/javascript"></script>-->
 <section class="rightPanel wide">
-	<div class="title"><h2>Blog Comments</h2></div>
-	<section class="box search_filter">
-		<div class="box_head"><h3></h3></div>
-		<div class="box_content clearfix toggle_container">
-						<form method="post" action="" name="frmComment" id="frmComment" onsubmit="searchPost(this); return false;" class="siteForm"><table class="formTable threeCol" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td><br><input type="text" name="comment_author_name" id="comment_author_name" value="" placeholder="Search Comment Author Name..." title="" /></td><td><br><select name="comment_status"  title="" id="comment_status" ><option value="">Select Comment Status</option><option value="0" >Pending</option><option value="1" >Approved</option><option value="2" >Deleted</option></select></td><td><br><input type="submit" name="btn_submit" id="btn_submit" title="" value="Search" /><input type="button" name="btn_reset" id="btn_reset"onclick="document.location.href='/manager/blogcomments'" class="btn_reset" style="cursor:pointer; margin-left:10px;" title="" value="Reset" /></td></tr></table><input type="hidden" name="page" value="1"  title="" /></form><script type="text/javascript">//<![CDATA[
-			frmComment_validator_requirements={"comment_author_name":{"required":false},"comment_status":{"required":false},"btn_submit":{"required":false},"btn_reset":{"required":false},"page":{"required":false}};frmComment_validator_formatting={"errordisplay":"afterfield","summaryElementId":""};frmComment_validator=$("#frmComment").validation(frmComment_validator_requirements,frmComment_validator_formatting);
-			//]]></script>		</div>
+		<div class="title"><h2>Blog Posts Form</h2></div>
+	<section class="box filterbox">
+		<div class="box_content toggle_container">
+			<div class="borderContainer">
+				<form method="post" action="" name="frmPost" id="frmPost" enctype="multipart/form-data" class="siteForm">					<table width="100%" cellspacing="0" cellpadding="0" border="0" class="formTable">
+						<tbody>
+							<tr>
+								<td width="25%">Post Title<span class="spn_must_field">*</span></td>
+								<td><input type="text" name="post_title" id="post_title" value="" onblur="setSeoName(this, post_seo_name)" title="Post Title" /></td>
+							</tr>
+							<tr>
+								<td width="25%">Post SEO Name<span class="spn_must_field">*</span></td>
+								<td><input type="text" name="post_seo_name" id="post_seo_name" value="" onblur="setSeoName(this, post_seo_name)" title="Post SEO Name"  data-mbsunichk="1" onchange="checkUnique($(this), 'tbl_blog_post', 'post_seo_name', 'post_id', $('#post_id'), []); checkUnique($(this), 'tbl_blog_post', 'post_seo_name', 'post_id', $('#post_id'), []); " data-mbsunichk="1" /></td>
+							</tr>
+							<tr>
+								<td width="25%">Post Contibutor Name</td>
+								<td><input type="text" name="post_contibutor_name" id="post_contibutor_name" value=""  title="Contributor Name" /></td>
+							</tr>
+							<tr>
+								<td width="25%">Post Short Description</td>
+								<td><textarea name="post_short_description" id="post_short_description"  title="Post Short Description"></textarea></td>
+							</tr>
+							<tr>
+								<td width="25%">Post Content<span class="spn_must_field">*</span></td>
+								<td><textarea name="post_content" id="mbs_auto_id_post_content"  title="Post Content"></textarea><script type="text/javascript">//<![CDATA[
+			                
+			                    var oEdit_mbs_auto_id_post_content = new InnovaEditor("oEdit_mbs_auto_id_post_content");
+			                    oEdit_mbs_auto_id_post_content.width = "100%";
+oEdit_mbs_auto_id_post_content.height = 150;
+oEdit_mbs_auto_id_post_content.groups = [
+                        ["group1", "", ["Bold", "Italic" , "Underline", "FontDialog", "ForeColor", "TextDialog", "RemoveFormat", "Paragraph"]],
+                        ["group2", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]],
+                        ["group3", "", ["Bullets", "Numbering", "JustifyLeft", "JustifyCenter", "JustifyRight"]],
+                        ["group4", "", ["LinkDialog", "ImageDialog", "YoutubeDialog", "TableDialog", "Emoticons"]],
+                        ["group5", "", ["InternalLink"]],
+                        ];
+oEdit_mbs_auto_id_post_content.fileBrowser = "/innova-lnk/assetmanager/asset.php";
+
+			                oEdit_mbs_auto_id_post_content.REPLACE("mbs_auto_id_post_content");
+			                //]]></script></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Post Image</td>
+								<td id="image_div"><input type="file" name="post_image_file_name[]" accept="image/*" title="Post Image" /><a class="button small green" id="add_more_field">Add More</a> <b class="b_size_class">Image Size Should be 800x300px</b></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Post Status</td>
+								<td><select name="post_status"  title="Post Status" id="post_status" ><option value="0"  selected="selected">Draft</option><option value="1" >Published</option></select></td>
+							</tr>
+							<tr>
+								<td width="25%">Post Comment Status</td>
+								<td><select name="post_comment_status"  title="Post Comment Status" id="post_comment_status" ><option value="0" >Not Open</option><option value="1" >Open</option></select></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Categories</td>
+								<td class="Categories"><input type="checkbox" name="relation_category_id[]" id="relation_category_id" value=1 >Nature<br/><br/><ul class="sub-categories"><li><input type="checkbox" name="relation_category_id[]" id="relation_category_id" value=2 >Life</li></ul></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Meta Title</td>
+								<td><input type="text" name="meta_title" id="meta_title" value=""  title="Meta Title" /></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Meta Keywords</td>
+								<td><textarea name="meta_keywords" id="meta_keywords"  title="Meta Keywords"></textarea></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Meta Description</td>
+								<td><textarea name="meta_description" id="meta_description"  title="Meta Description"></textarea></td>
+							</tr>
+
+							<tr>
+								<td width="25%">Meta Others</td>
+								<td><textarea name="meta_others" id="meta_others"  title="Meta Others"></textarea><em>Note: Meta Others are HTML meta tags, e.g &lt;meta name="example" content="example" /&gt;. We are not validating these tags, please take care of this.</em></td>
+							</tr>
+
+							<tr>
+								<td width="25%"></td>
+								<td>
+									<input type="submit" name="btn_submit" id="btn_submit" title="" value="Submit" /> 
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<input type="hidden" name="post_id" id="post_id" value=""  title="" />					<input type="hidden" name="meta_id" id="meta_id" value=""  title="" />				</form><script type="text/javascript">//<![CDATA[
+			frmPost_validator_requirements={"post_title":{"required":true},"post_seo_name":{"required":true},"post_contibutor_name":{"required":false},"post_short_description":{"required":false},"post_content":{"required":true},"post_status":{"required":false},"post_comment_status":{"required":false},"post_image_file_name":{"required":false},"meta_title":{"required":false},"meta_keywords":{"required":false},"meta_description":{"required":false},"meta_others":{"required":false},"post_id":{"required":false},"meta_id":{"required":false},"post_removed_images":{"required":false},"btn_submit":{"required":false}};frmPost_validator_formatting={"errordisplay":"afterfield","summaryElementId":""};frmPost_validator=$("#frmPost").validation(frmPost_validator_requirements,frmPost_validator_formatting);
+			//]]></script>			</div>
+		</div>
 	</section>
-	<section class="box" id="comment-list"></section>
 </section>
 	</div>
 		<!--body end here-->
@@ -167,7 +252,7 @@
 		<!--footer start here-->
 		<footer id="footer">
 			<p class="left">Note: All the times are according to server time. Current server time is
-			   Tuesday Jun 30, 2020, 16:18		   </p>
+			   Wednesday Jul 01, 2020, 01:44		   </p>
 		</footer>
 		<!--footer end here-->
 

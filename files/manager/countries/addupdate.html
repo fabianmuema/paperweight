@@ -51,7 +51,7 @@
 			<section class="navs">
 				<div id="cbp-hrmenu" class="navWrap cbp-hrmenu">
 					<ul class="navigations">
-						<li class="current"><a href="/xampp/htdocs/paper weight/index.html" ><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_home.png" alt="">Dashboard</a></li>
+						<li><a href="/xampp/htdocs/paper weight/index.html" ><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_home.png" alt="">Dashboard</a></li>
 						<li >
 							<a href="/xampp/htdocs/paper weight/files/manager/orders.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_deals.png" alt="">Orders</a>
 							<div class="cbp-hrsub">
@@ -111,7 +111,7 @@
 								</div>
 							</div>
 						</li>
-						<li >
+						<li class="current">
 							<a href="javascript:void(0);"><img src="/xampp/htdocs/paper weight/assets/imagesicons/icon_settings.png" alt="">Settings</a>
 							<div class="cbp-hrsub">
 								<div class="fixedWrap">
@@ -146,19 +146,47 @@
 
 		</header>
 		<div id="body">
-<section class="rightPanel wide">
-	<div class="title"><h2>Blog Comments</h2></div>
-	<section class="box search_filter">
-		<div class="box_head"><h3></h3></div>
+<!--leftPanel start here-->    
+<section class="leftPanel">
+    <ul class="leftNavs">
+        <li><a href="/xampp/htdocs/paper weight/files/manager/configurations.html">GENERAL SETTINGS</a>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/labels.html">LABELS MANAGEMENT</a></li>
+
+            <li class="current"><a href="/xampp/htdocs/paper weight/files/manager/countries.html">MANAGE COUNTRIES</a></li>
+            <!--<li><a href="">MANAGE WORK FIELD</a></li>-->
+            <li><a href="/xampp/htdocs/paper weight/files/manager/disciplines.html">MANAGE DISCIPLINES</a></li>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/paper.html">MANAGE PAPER TYPE</a></li>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/academic.html">ACADEMIC DEGREES</a></li>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/citation.html">MANAGE CITATION STYLE</a></li>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/services.html">MANAGE SERVICES TYPE</a></li>
+            <li><a href="/xampp/htdocs/paper weight/files/manager/paymentmethods.html">PAYMENT METHODS</a></li>
+
+    </ul>
+</section>
+<!--leftPanel end here--> <section class="rightPanel">
+    <ul class="breadcrumb">
+        <li><a href="/xampp/htdocs/paper weight/index.html"><img src="/xampp/htdocs/paper weight/assets/imagesicons/home.png" alt=""> </a></li>
+        <li><a href="/manager/countries">Country Management</a></li>
+		<li>Add/Update Country</li>
+	</ul>
+		<div class="title"><h2>Add/Update Country</h2></div>
+	<section class="box filterbox">
+		<div class="box_head"><h3>Country Form</h3></div>
 		<div class="box_content clearfix toggle_container">
-						<form method="post" action="" name="frmComment" id="frmComment" onsubmit="searchPost(this); return false;" class="siteForm"><table class="formTable threeCol" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td><br><input type="text" name="comment_author_name" id="comment_author_name" value="" placeholder="Search Comment Author Name..." title="" /></td><td><br><select name="comment_status"  title="" id="comment_status" ><option value="">Select Comment Status</option><option value="0" >Pending</option><option value="1" >Approved</option><option value="2" >Deleted</option></select></td><td><br><input type="submit" name="btn_submit" id="btn_submit" title="" value="Search" /><input type="button" name="btn_reset" id="btn_reset"onclick="document.location.href='/manager/blogcomments'" class="btn_reset" style="cursor:pointer; margin-left:10px;" title="" value="Reset" /></td></tr></table><input type="hidden" name="page" value="1"  title="" /></form><script type="text/javascript">//<![CDATA[
-			frmComment_validator_requirements={"comment_author_name":{"required":false},"comment_status":{"required":false},"btn_submit":{"required":false},"btn_reset":{"required":false},"page":{"required":false}};frmComment_validator_formatting={"errordisplay":"afterfield","summaryElementId":""};frmComment_validator=$("#frmComment").validation(frmComment_validator_requirements,frmComment_validator_formatting);
+			<div id="validationsummary_frmCountries"></div><form method="post" action="/manager/countries/setup" name="frmCountries" id="frm_mbs_id_frmCountries" class="siteForm" width="100%"><table class="formTable" width="100%"><tr>
+<td>Country Name:<span class="spn_must_field">*</span></td>
+<td><input type="text" name="country_name" id="country_name" value=""  title="Country Name:" onchange="checkUnique($(this), 'tbl_countries', 'country_name', 'country_id', $('#country_id'), []); " data-mbsunichk="1" /></td>
+</tr><tr>
+<td>Country Status:</td>
+<td><select name="country_active"  title="Country Status:" id="" ><option value="">Select</option><option value="0" >Inactive</option><option value="1" >Active</option></select></td>
+</tr><tr>
+<td></td>
+<td><input type="submit" name="btn_submit" title="" value="Submit" /></td>
+</tr></table><input type="hidden" name="country_id" value=""  title="" /></form><script type="text/javascript">//<![CDATA[
+			frmCountries_validator_requirements={"country_id":{"required":false},"country_name":{"required":true},"country_active":{"required":false},"btn_submit":{"required":false}};frmCountries_validator_formatting={"errordisplay":"summary","summaryElementId":"validationsummary_frmCountries"};frmCountries_validator=$("#frm_mbs_id_frmCountries").validation(frmCountries_validator_requirements,frmCountries_validator_formatting);
 			//]]></script>		</div>
 	</section>
-	<section class="box" id="comment-list"></section>
-</section>
-	</div>
+</section>	</div>
 		<!--body end here-->
 
 	</div>
@@ -167,7 +195,7 @@
 		<!--footer start here-->
 		<footer id="footer">
 			<p class="left">Note: All the times are according to server time. Current server time is
-			   Tuesday Jun 30, 2020, 16:18		   </p>
+			   Wednesday Jul 01, 2020, 02:48		   </p>
 		</footer>
 		<!--footer end here-->
 

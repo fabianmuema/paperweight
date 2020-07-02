@@ -4459,7 +4459,7 @@ input:-ms-input-placeholder {
 }
 
 .topLinks li a:hover {
-    background: #3d4249;
+    background: white;
 }
 
 .topLinks li a.current {
